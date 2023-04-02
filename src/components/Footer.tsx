@@ -80,32 +80,32 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-[#62CFF4]"> 
+            <h4 className="font-bold text-[#62CFF4] text-[15px] mb-2"> 
               Servicios
             </h4>
             <ul>
               <li className="mb-2">
-                <Link href="/servicios/asesorias" className="inline-flex gap-x-2 items-start leading-[1.5]">
-                  <Diamond/>
-                  <span className="text-[15px] font-light">Asesorías en Eficiencia Energética y Gestión de la Energía</span>
+                <Link href="/servicios/asesorias" className="inline-flex gap-x-2 items-start">
+                  <span><Diamond/></span>
+                  <span className="text-[15px] font-light leading-[1.2]">Asesorías en Eficiencia Energética y Gestión de la Energía</span>
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="/servicios/consultorias" className="inline-flex gap-x-2 items-start leading-[1.5]">
-                  <Diamond/>
-                  <span className="text-[15px] font-light leading-none">Consultarías Técnicas - Procesos Minero Metalúrgicos</span>
+                <Link href="/servicios/consultorias" className="inline-flex gap-x-2 items-start">
+                  <span><Diamond/></span>
+                  <span className="text-[15px] font-light leading-[1.2]">Consultarías Técnicas - Procesos Minero Metalúrgicos</span>
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="/servicios/proyectos" className="inline-flex gap-x-2 items-start leading-[1.5]">
-                  <Diamond/>
-                  <span className="text-[15px] font-light leading-none">Desarrollo de Proyectos de Sustentabilidad</span>
+                <Link href="/servicios/proyectos" className="inline-flex gap-x-2 items-start">
+                  <span><Diamond/></span>
+                  <span className="text-[15px] font-light leading-[1.2]">Desarrollo de Proyectos de Sustentabilidad</span>
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="/servicios/capacitaciones" className="inline-flex gap-x-2 items-start leading-[1.5]">
-                  <Diamond/>
-                  <span className="text-[15px] font-light leading-none">Capacitaciones Ténicas</span>
+                <Link href="/servicios/capacitaciones" className="inline-flex gap-x-2 items-start">
+                  <span><Diamond/></span>
+                  <span className="text-[15px] font-light leading-[1.2]">Capacitaciones Ténicas</span>
                 </Link>
               </li>
             </ul>
@@ -117,10 +117,12 @@ export const Footer = () => {
         </div>
         {/* copyright */}
         <div>
-          copyright
+          <h4 className="font-bold text-[#62CFF4] text-[15px] mb-2"> 
+            Servicios
+          </h4>
+          <ul></ul>
         </div>
       </div>
     </footer>
   )
 }
-
