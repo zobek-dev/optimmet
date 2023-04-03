@@ -3,9 +3,8 @@ import { Diamond, Phone, Mail, Location } from "@/svg"
 import Link from 'next/link'
 
 export const Footer = () => {
-  console.log(Diamond)
   return(
-    <footer>
+    <footer className="py-12">
       <div className="wrapper">
         {/* Columns */}
         <div className="grid gap-8 lg:gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -115,29 +114,31 @@ export const Footer = () => {
               Contáctanos en
             </h4>
             <ul>
-              <li>
+              <li className="mb-2">
                 <Link href="tel:+56983315589" className="inline-flex gap-4 items-center">
                   <span><Phone/></span>
-                  <span className="text-[15px]">+56 9 8331 5589</span>
+                  <span className="text-[15px] font-light">+56 9 8331 5589</span>
                 </Link>
               </li>
-              <li>
+              <li className="mb-2">
                 <Link href="mailto:contacto@cellmed.cl" className="inline-flex gap-4 items-center">
                   <span><Mail/></span>
-                  <span className="text-[15px]">contacto@cellmed.cl</span>
+                  <span className="text-[15px] font-light">contacto@cellmed.cl</span>
                 </Link>
               </li>
-              <li>
+              <li className="mb-2">
                 <Link href="#" className="inline-flex gap-4 items-center">
                   <span><Location/></span>
-                  <span className="text-[15px]">Santiago, Chile</span>
+                  <span className="text-[15px] font-light">Santiago, Chile</span>
                 </Link>
               </li>
             </ul>
           </div>
         </div>
         {/* copyright */}
-        <p>Desarrollado por <Link href="https://vanilla.cl" target="_blank">Vanilla Diseño</Link></p>  
+        <p className="mt-8 text-right text-sm font-light relative">
+          Desarrollado por <Link href="https://vanilla.cl" target="_blank" className="underline" rel="noreferrer noopener">Vanilla Diseño</Link>
+        </p>  
       </div>
     </footer>
   )
