@@ -1,12 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Hero, HomeMarcas } from '@/components';
+import { Hero, HomeMarcas, HomeServices, HomeSobre } from '@/components';
 
 export default function Home() {
   return (
     <>
       <Hero/>
-      <HomeMarcas/>          
+      <HomeMarcas/> 
+      <HomeSobre/>
+      <HomeServices/>       
     </>
   )
 }

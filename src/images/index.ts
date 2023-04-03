@@ -7,6 +7,12 @@ import HeroHome from 'public/images/hero-home.jpg'
 import AngloAmerican from 'public/images/anglo-american.png'
 import Bhp from 'public/images/bhp.png'
 import Giz from 'public/images/giz.png'
+import AntofagastaMinerals from 'public/images/antofagasta-minerals.png'
+import CodelcoAndina from 'public/images/codelco-andina.png'
+import AsesoriasCard from 'public/images/asesorias-card.jpg'
+import ConsultoriasCard from 'public/images/consultoria-card.jpg'
+import DesarrollosCard from 'public/images/desarrollos-card.jpg'
+import CapacitacionesCard from 'public/images/capacitaciones-card.jpg'
 
 export {
   LogoFooter,
@@ -18,4 +24,10 @@ export {
   AngloAmerican,
   Bhp, 
   Giz,
+  AntofagastaMinerals,
+  CodelcoAndina,
+  AsesoriasCard,
+  ConsultoriasCard,
+  DesarrollosCard,
+  CapacitacionesCard
 }

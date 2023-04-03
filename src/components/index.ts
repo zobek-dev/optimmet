@@ -2,10 +2,14 @@ import { Header } from './Header'
 import { Footer } from './Footer'
 import { Hero } from './Hero'
 import { HomeMarcas } from './HomeMarcas'
+import { HomeSobre } from './HomeSobre'
+import { HomeServices } from './HomeServices'
 
 export { 
   Header, 
   Footer, 
   Hero,
-  HomeMarcas
+  HomeMarcas,
+  HomeSobre,
+  HomeServices
 }

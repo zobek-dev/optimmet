@@ -16,7 +16,7 @@ export const Hero = () => {
         <Link href="/servicios" className="block bg-[#62CFF4] py-2 px-4 w-max rounded-[32px] text-white text-[17px] my-6 font-medium">
           Ver Servicios
         </Link>
-        <DiamondBig className="absolute -bottom-[28px] lg:left-0"/>
+        <DiamondBig className="absolute -bottom-[28px] lg:left-4"/>
       </div>
     </section>
   )
