@@ -1,5 +1,5 @@
 import { LogoFooter, Instagram, Facebook, Linkedin } from "@/images"
-import { Diamond } from "@/svg"
+import { Diamond, Phone, Mail, Location } from "@/svg"
 import Link from 'next/link'
 
 export const Footer = () => {
@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer>
       <div className="wrapper">
         {/* Columns */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 lg:gap-4 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <img 
             src={LogoFooter.src} 
@@ -84,25 +84,25 @@ export const Footer = () => {
               Servicios
             </h4>
             <ul>
-              <li className="mb-2">
+              <li className="mb-2 block leading-none">
                 <Link href="/servicios/asesorias" className="inline-flex gap-x-2 items-start">
                   <span><Diamond/></span>
                   <span className="text-[15px] font-light leading-[1.2]">Asesorías en Eficiencia Energética y Gestión de la Energía</span>
                 </Link>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 block leading-none">
                 <Link href="/servicios/consultorias" className="inline-flex gap-x-2 items-start">
                   <span><Diamond/></span>
                   <span className="text-[15px] font-light leading-[1.2]">Consultarías Técnicas - Procesos Minero Metalúrgicos</span>
                 </Link>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 block leading-none">
                 <Link href="/servicios/proyectos" className="inline-flex gap-x-2 items-start">
                   <span><Diamond/></span>
                   <span className="text-[15px] font-light leading-[1.2]">Desarrollo de Proyectos de Sustentabilidad</span>
                 </Link>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 block leading-none">
                 <Link href="/servicios/capacitaciones" className="inline-flex gap-x-2 items-start">
                   <span><Diamond/></span>
                   <span className="text-[15px] font-light leading-[1.2]">Capacitaciones Ténicas</span>
@@ -110,18 +110,34 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div>
-            Columna 4
+            <h4 className="font-bold text-[#62CFF4] text-[15px] mb-2"> 
+              Contáctanos en
+            </h4>
+            <ul>
+              <li>
+                <Link href="tel:+56983315589" className="inline-flex gap-4 items-center">
+                  <span><Phone/></span>
+                  <span className="text-[15px]">+56 9 8331 5589</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="mailto:contacto@cellmed.cl" className="inline-flex gap-4 items-center">
+                  <span><Mail/></span>
+                  <span className="text-[15px]">contacto@cellmed.cl</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="#" className="inline-flex gap-4 items-center">
+                  <span><Location/></span>
+                  <span className="text-[15px]">Santiago, Chile</span>
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
         {/* copyright */}
-        <div>
-          <h4 className="font-bold text-[#62CFF4] text-[15px] mb-2"> 
-            Servicios
-          </h4>
-          <ul></ul>
-        </div>
+        <p>Desarrollado por <Link href="https://vanilla.cl" target="_blank">Vanilla Diseño</Link></p>  
       </div>
     </footer>
   )
