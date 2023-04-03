@@ -6,7 +6,7 @@ export const Header = () => {
   const [scrollTop, setScrollTop] = useState<number>(0)
   useEffect(()=>{
     //adding scroll value to the state
-    const handleScroll = () => {
+    const handleScroll = (event: any) => {
       setScrollTop(window.scrollY);
     }
 
@@ -18,7 +18,7 @@ export const Header = () => {
     }
   },[])
   return (
-    <header className={`py-4 lg:py-8 w-full ${scrollTop && scrollTop > 50 ? 'sticky bg-[rgba(0,0,0,.5)]': 'absolute bg-transparent'} top-0 left-0 transitions-colors duration-150 ease-in-out`}>
+    <header className={`py-4 lg:py-8 w-full z-[999] ${scrollTop && scrollTop > 50 ? 'sticky bg-[rgba(0,0,0,.5)]': 'absolute bg-transparent'} top-0 left-0 transitions-colors duration-150 ease-in-out`}>
       <div className="wrapper">
         <div className="flex justify-between items-center">
           <Link href="/">
@@ -58,7 +58,7 @@ export const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contacto" className="bg-[#C7E22B] block w-max px-4 py-2 rounded-[32px] text-[#08376B] text-[17px]">
+                  <Link href="/contacto" className="bg-[#C7E22B] block w-max px-4 py-2 rounded-[32px] text-[#08376B] text-[17px] font-medium">
                     Contáctanos
                   </Link>
                 </li>
