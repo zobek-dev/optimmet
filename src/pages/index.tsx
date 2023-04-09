@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Hero, HomeMarcas, HomeServices, HomeSobre } from '@/components';
+import { Hero, HomeMarcas, HomeServices, HomeSobre, HomeNosEligen } from '@/components';
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <HomeMarcas/> 
       <HomeSobre/>
       <HomeServices/>       
+      <HomeNosEligen/>
     </>
   )
 }

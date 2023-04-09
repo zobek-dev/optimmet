@@ -13,6 +13,7 @@ import AsesoriasCard from 'public/images/asesorias-card.jpg'
 import ConsultoriasCard from 'public/images/consultoria-card.jpg'
 import DesarrollosCard from 'public/images/desarrollos-card.jpg'
 import CapacitacionesCard from 'public/images/capacitaciones-card.jpg'
+import TheCircle from 'public/images/the-circle.png'
 
 export {
   LogoFooter,
@@ -29,5 +30,6 @@ export {
   AsesoriasCard,
   ConsultoriasCard,
   DesarrollosCard,
-  CapacitacionesCard
+  CapacitacionesCard,
+  TheCircle
 }
