@@ -8,6 +8,7 @@ import { HomeNosEligen } from './HomeNosEligen'
 import { HomeProyectos } from './HomeProyectos'
 import { ModalProyecto } from './ModalProyecto'
 import { Project } from './Project'
+import { HomeValores } from './HomeValores'
 
 export { 
   Header, 
@@ -19,5 +20,6 @@ export {
   HomeNosEligen, 
   HomeProyectos, 
   ModalProyecto, 
-  Project
+  Project,
+  HomeValores
 }

@@ -6,6 +6,8 @@ import DiamondBig from 'public/images/diamond-big.svg'
 import DiamondUnderline from 'public/images/diamond-underline.svg'
 import CircleSmall from 'public/images/circle-small.svg'
 import IconClose from 'public/images/icon-close.svg'
+import WspSmall from 'public/images/wsp-small.svg'
+import Wsp from 'public/images/wsp.svg'
 
 export { 
   Diamond,
@@ -15,5 +17,7 @@ export {
   DiamondBig,
   DiamondUnderline,
   CircleSmall,
-  IconClose
+  IconClose,
+  WspSmall,
+  Wsp
 }

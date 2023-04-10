@@ -19,6 +19,10 @@ import CaracterizacionEnergetica from 'public/images/caracterizacion-energetica.
 import CaracterizacionEnergeticaModal from 'public/images/caracterizacion-energetica-modal.jpg'
 import AnalisisDeBrechas from 'public/images/analisis-de-brechas.jpg'
 import Tove3 from 'public/images/tove3.jpg'
+import Experiencia from 'public/images/experiencia.png'
+import Integramos from 'public/images/integramos.png'
+import Involucramos from 'public/images/involucramos.png'
+import Hacemos from 'public/images/hacemos.png'
 
 export {
   LogoFooter,
@@ -41,5 +45,9 @@ export {
   CaracterizacionEnergetica,
   CaracterizacionEnergeticaModal,
   AnalisisDeBrechas,
-  Tove3
+  Tove3,
+  Experiencia,
+  Integramos,
+  Involucramos, 
+  Hacemos
 }
