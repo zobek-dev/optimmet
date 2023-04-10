@@ -4,6 +4,7 @@ import Mail from 'public/images/mail.svg'
 import Location from 'public/images/location.svg'
 import DiamondBig from 'public/images/diamond-big.svg'
 import DiamondUnderline from 'public/images/diamond-underline.svg'
+import CircleSmall from 'public/images/circle-small.svg'
 
 export { 
   Diamond,
@@ -11,5 +12,6 @@ export {
   Mail,
   Location,
   DiamondBig,
-  DiamondUnderline
+  DiamondUnderline,
+  CircleSmall
 }

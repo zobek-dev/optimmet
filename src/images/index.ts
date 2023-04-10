@@ -14,6 +14,11 @@ import ConsultoriasCard from 'public/images/consultoria-card.jpg'
 import DesarrollosCard from 'public/images/desarrollos-card.jpg'
 import CapacitacionesCard from 'public/images/capacitaciones-card.jpg'
 import TheCircle from 'public/images/the-circle.png'
+import ConsultoriaEnEnergia from 'public/images/consultoria-en-energia.jpg'
+import CaracterizacionEnergetica from 'public/images/caracterizacion-energetica.jpg'
+import CaracterizacionEnergeticaModal from 'public/images/caracterizacion-energetica-modal.jpg'
+import AnalisisDeBrechas from 'public/images/analisis-de-brechas.jpg'
+import Tove3 from 'public/images/tove3.jpg'
 
 export {
   LogoFooter,
@@ -31,5 +36,10 @@ export {
   ConsultoriasCard,
   DesarrollosCard,
   CapacitacionesCard,
-  TheCircle
+  TheCircle,
+  ConsultoriaEnEnergia,
+  CaracterizacionEnergetica,
+  CaracterizacionEnergeticaModal,
+  AnalisisDeBrechas,
+  Tove3
 }

@@ -5,6 +5,9 @@ import { HomeMarcas } from './HomeMarcas'
 import { HomeSobre } from './HomeSobre'
 import { HomeServices } from './HomeServices'
 import { HomeNosEligen } from './HomeNosEligen'
+import { HomeProyectos } from './HomeProyectos'
+import { ModalProyecto } from './ModalProyecto'
+import { Project } from './Project'
 
 export { 
   Header, 
@@ -13,5 +16,8 @@ export {
   HomeMarcas,
   HomeSobre,
   HomeServices,
-  HomeNosEligen
+  HomeNosEligen, 
+  HomeProyectos, 
+  ModalProyecto, 
+  Project
 }
