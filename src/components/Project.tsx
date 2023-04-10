@@ -19,7 +19,7 @@ export const Project = ({ project }: Proyecto) => {
   const [openModal, setOpenModal] = useState(false)
   const { title, image_card, image_modal, content, company, type } = project
   return (
-    <li>
+    <li className="mx-autogit">
       <div onClick={()=>setOpenModal(true)} className="group max-w-[380px] -mb-24">
         <img
           src={image_card.src}
