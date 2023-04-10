@@ -53,9 +53,9 @@ export const HomeProyectos = () => {
       <section className="py-8 lg:py-24">
         <div className="wrapper">
           <h2 className="text-center font-bold text-[30px] lg:text-[40px] leading-[1.2] mb-2">Proyectos Destacados</h2>
-          <p className="font-light text-[17px] lg:text-[20px] text-center">Concoce nuestros proyectos destacados</p>
-          <DiamondUnderline className="mx-auto"/>
-          <ul tabIndex={-1}>
+          <p className="font-light text-[17px] lg:text-[20px] text-center mb-2">Concoce nuestros proyectos destacados</p>
+          <DiamondUnderline className="mx-auto mb-8"/>
+          <ul tabIndex={-1} className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {proyectos && proyectos.map((project, index)=> (
               <Project key={index} project={project}/>
             ))}

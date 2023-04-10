@@ -5,6 +5,7 @@ import Location from 'public/images/location.svg'
 import DiamondBig from 'public/images/diamond-big.svg'
 import DiamondUnderline from 'public/images/diamond-underline.svg'
 import CircleSmall from 'public/images/circle-small.svg'
+import IconClose from 'public/images/icon-close.svg'
 
 export { 
   Diamond,
@@ -13,5 +14,6 @@ export {
   Location,
   DiamondBig,
   DiamondUnderline,
-  CircleSmall
+  CircleSmall,
+  IconClose
 }
