@@ -23,6 +23,10 @@ import Experiencia from 'public/images/experiencia.png'
 import Integramos from 'public/images/integramos.png'
 import Involucramos from 'public/images/involucramos.png'
 import Hacemos from 'public/images/hacemos.png'
+import DummyBlog from 'public/images/dummy-blog.jpg'
+import ImageCTA from 'public/images/image_cta.png'
+import SistemaSmall from 'public/images/sistema-small.jpg'
+import ReduccionSmall from 'public/images/reduccion-small.jpg'
 
 export {
   LogoFooter,
@@ -49,5 +53,9 @@ export {
   Experiencia,
   Integramos,
   Involucramos, 
-  Hacemos
+  Hacemos,
+  DummyBlog,
+  ImageCTA,
+  SistemaSmall,
+  ReduccionSmall
 }

@@ -9,6 +9,9 @@ import { HomeProyectos } from './HomeProyectos'
 import { ModalProyecto } from './ModalProyecto'
 import { Project } from './Project'
 import { HomeValores } from './HomeValores'
+import { HomeBlog } from './HomeBlog'
+import { PostCard } from './PostCard'
+import { CallToAction } from './CallToAction'
 
 export { 
   Header, 
@@ -21,5 +24,8 @@ export {
   HomeProyectos, 
   ModalProyecto, 
   Project,
-  HomeValores
+  HomeValores,
+  HomeBlog, 
+  PostCard, 
+  CallToAction
 }

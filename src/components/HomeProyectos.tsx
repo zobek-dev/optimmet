@@ -50,7 +50,7 @@ const proyectos: IProject[] = [
 export const HomeProyectos = () => {
   return (
     <>
-      <section className="py-8 lg:py-24">
+      <section className="py-12 lg:py-24">
         <div className="wrapper">
           <h2 className="text-center font-bold text-[30px] lg:text-[40px] leading-[1.2] mb-2">Proyectos Destacados</h2>
           <p className="font-light text-[17px] lg:text-[20px] text-center mb-2">Concoce nuestros proyectos destacados</p>

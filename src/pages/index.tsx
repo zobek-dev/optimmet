@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Hero, HomeMarcas, HomeServices, HomeSobre, HomeNosEligen, HomeProyectos, HomeValores } from '@/components';
+import { Hero, HomeMarcas, HomeServices, HomeSobre, HomeNosEligen, HomeProyectos, HomeValores, HomeBlog } from '@/components';
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <HomeNosEligen/>
       <HomeProyectos/>
       <HomeValores/>
+      <HomeBlog/>
     </>
   )
 }

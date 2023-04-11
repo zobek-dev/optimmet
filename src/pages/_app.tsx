@@ -1,6 +1,6 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { Header, Footer } from '@/components/'
+import { Header, Footer, CallToAction } from '@/components/'
 import { Montserrat } from 'next/font/google'
 
 const montserrat = Montserrat({ 
@@ -20,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <main className='min-h-[90vh]'> 
         <Component {...pageProps}/>
       </main>
+      <CallToAction/>
       <Footer/>
     </>
   )
