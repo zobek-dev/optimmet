@@ -25,24 +25,26 @@ export const CallToAction = () => {
           </div>
         </div>
       </section>
-      <section className="flex flex-col lg:flex-row">
-        <div className="flex">
+      <section className="flex flex-col md:flex-row w-full overflow-hidden">
+        <div className="flex flex-row">
           <img 
             src={SistemaSmall.src} 
             alt="Sistema de Gestión de la Energía" 
             width={SistemaSmall.width}
             height={SistemaSmall.height}
-            className="object-cover object-center col-span-4" 
+            className="object-cover object-center col-span-4 flex-1" 
             loading="lazy"
           />
           <div className="bg-[#62CFF4] text-white px-4 flex items-center col-span-3">
             <span className="text-[18px] font-bold text-center block">Sistemas de <br/> Gestión de la <br/>Energía</span>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex flex-row-reverse md:flex-row">
           <img 
-            src={ReduccionSmall.src} 
-            alt="Sistema de Gestión de la Energía" 
+            src={SistemaSmall.src} 
+            alt="Sistema de Gestión de la Energía"
+            width={SistemaSmall.width}
+            height={SistemaSmall.height} 
             className="aspect-[4/3] object-fill object-center" 
             loading="lazy"
           />
@@ -50,10 +52,12 @@ export const CallToAction = () => {
             <span className="text-[18px] font-bold text-center">Auditorías<br/> energéticas</span>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex flex-row">
           <img 
-            src={ReduccionSmall.src} 
-            alt="Sistema de Gestión de la Energía" 
+            src={SistemaSmall.src} 
+            alt="Sistema de Gestión de la Energía"
+            width={SistemaSmall.width}
+            height={SistemaSmall.height}  
             className="aspect-[4/3] object-fill object-center" 
             loading="lazy"
           />
@@ -61,9 +65,11 @@ export const CallToAction = () => {
             <span className="text-[18px] font-bold text-center">Auditorías<br/> energéticas</span>
           </div>
           <img 
-            src={ReduccionSmall.src} 
+            src={SistemaSmall.src} 
             alt="Sistema de Gestión de la Energía" 
             className="aspect-[4/3] object-fill object-center hidden md:block" 
+            width={SistemaSmall.width}
+            height={SistemaSmall.height}
             loading="lazy"
           />
         </div>

@@ -46,10 +46,10 @@ export const HomeServices = () => {
         </h2>
         <p className="text-[17px] lg:text-[20px] text-center">cómo podemos apoyar a tu empresa</p>
         <DiamondUnderline className="mx-auto mt-3"/>
-        <ul className="max-w-[730px] mx-auto flex flex-row overflow-x-scroll md:flex md:flex-col items-center my-12 gap-y-8 gap-x-4 md:gap-x-0 md:gap-y-0">
+        <ul className=" mx-auto grid grid-flow-col auto-cols-[0, _246px] overflow-x-scroll md:flex md:flex-col items-center my-12 gap-y-8 gap-x-4 md:gap-x-0 md:gap-y-0">
           {services && services.map(
             (service, index) => (
-              <li key={index}>
+              <li key={index} className="overflow-y-hidden w-[260px] md:w-[unset]">
                 <Link href={service.url} className="group">
                   <div className={`flex flex-col items-center mb-[-90px] md:mb-[0] ${index % 2 == 0 ? 'md:flex-row':'md:flex-row-reverse'}`}>
                     <img src={service.image.src} alt={service.title} width={service.image.width} height={service.image.height} loading="lazy" className="rounded-[18px] object-cover object-center aspect-square"/>

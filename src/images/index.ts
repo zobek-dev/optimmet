@@ -27,6 +27,8 @@ import DummyBlog from 'public/images/dummy-blog.jpg'
 import ImageCTA from 'public/images/image_cta.png'
 import SistemaSmall from 'public/images/sistema-small.jpg'
 import ReduccionSmall from 'public/images/reduccion-small.jpg'
+import Plug404 from 'public/images/plug.png'
+import LogoDark from 'public/images/logo-dark.png'
 
 export {
   LogoFooter,
@@ -57,5 +59,7 @@ export {
   DummyBlog,
   ImageCTA,
   SistemaSmall,
-  ReduccionSmall
+  ReduccionSmall,
+  Plug404,
+  LogoDark
 }
