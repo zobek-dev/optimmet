@@ -26,7 +26,7 @@ export const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     }
   },[])
-
+  
   return (
     <header className={`py-4 w-full z-[999] ${scrollTop && scrollTop > 50 ? 'sticky bg-[rgba(0,0,0,.5)]': 'absolute bg-transparent'} top-0 left-0 transitions-colors duration-150 ease-in-out`}>
       <div className="wrapper">

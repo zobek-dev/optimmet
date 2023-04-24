@@ -63,3 +63,29 @@
   background-size:cover;
   background-position: center;
 }
+
+/*- NOSOTROS -*/
+
+.hero-nosotros{
+  background-image: linear-gradient(180deg, rgba(8, 55, 107, 0.6) 0%, rgba(98, 207, 244, 0) 34.61%), url(../../public/images/sobre-optimmet.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* NOSOTROS MISION */
+.nosotros-mision{
+  background-image: linear-gradient(94.6deg, rgba(8, 55, 107, 0.8) 6.1%, rgba(252, 113, 94, 0) 110.02%), url(../../public/images/objetives.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* NOSOTROS PROPONEMOS */
+
+.nosotros-proponemos{
+  background-image: linear-gradient(94.6deg, rgba(8, 55, 107, 0.8) 6.1%, rgba(252, 113, 94, 0) 110.02%), url(../../public/images/proponemos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

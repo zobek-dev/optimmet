@@ -29,6 +29,11 @@ import SistemaSmall from 'public/images/sistema-small.jpg'
 import ReduccionSmall from 'public/images/reduccion-small.jpg'
 import Plug404 from 'public/images/plug.png'
 import LogoDark from 'public/images/logo-dark.png'
+import SobreOptimmet from 'public/images/sobre-optimmet.jpg'
+import IconProponemos from 'public/images/proponemos-icon.png'
+import ManteniendoProcesos from 'public/images/manteniendo-procesos.png'
+import InvolucrandoPersonas from 'public/images/involucrando-personas.png'
+import RecursosEficientes from 'public/images/recursos-eficiente.png'
 
 export {
   LogoFooter,
@@ -61,5 +66,11 @@ export {
   SistemaSmall,
   ReduccionSmall,
   Plug404,
-  LogoDark
+  LogoDark, 
+  SobreOptimmet,
+  IconProponemos,
+  ManteniendoProcesos,
+  InvolucrandoPersonas,
+  RecursosEficientes
+
 }
