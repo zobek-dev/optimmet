@@ -8,6 +8,7 @@ import CircleSmall from 'public/images/circle-small.svg'
 import IconClose from 'public/images/icon-close.svg'
 import WspSmall from 'public/images/wsp-small.svg'
 import Wsp from 'public/images/wsp.svg'
+import DiamodUnderlineGreen from 'public/images/diamond-underline-green.svg'
 
 export { 
   Diamond,
@@ -19,5 +20,6 @@ export {
   CircleSmall,
   IconClose,
   WspSmall,
-  Wsp
+  Wsp,
+  DiamodUnderlineGreen
 }

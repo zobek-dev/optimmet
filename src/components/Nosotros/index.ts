@@ -4,6 +4,7 @@ import { NosotrosMision } from "./NosotrosMision";
 import { PorqueNace } from "./PorqueNace";
 import { Proponemos } from "./Proponemos";
 import { MejorForma } from "./Mejor";
+import { NuestroEquipo } from "./NuestroEquipo";
 
 export {
   HeroNosotros,
@@ -11,5 +12,6 @@ export {
   NosotrosMision,
   PorqueNace, 
   Proponemos, 
-  MejorForma
+  MejorForma,
+  NuestroEquipo
 }

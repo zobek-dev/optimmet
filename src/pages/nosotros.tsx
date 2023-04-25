@@ -1,4 +1,4 @@
-import { HeroNosotros, MejorForma, NosotrosMision, PorqueNace, Proponemos, Richtext } from "@/components/Nosotros";
+import { HeroNosotros, MejorForma, NosotrosMision, NuestroEquipo, PorqueNace, Proponemos, Richtext } from "@/components/Nosotros";
 
 const Nosotros = ()=>{
   return(
@@ -9,6 +9,7 @@ const Nosotros = ()=>{
       <PorqueNace/>
       <Proponemos/>
       <MejorForma/>
+      <NuestroEquipo/>
     </>
   )
 }

@@ -34,6 +34,12 @@ import IconProponemos from 'public/images/proponemos-icon.png'
 import ManteniendoProcesos from 'public/images/manteniendo-procesos.png'
 import InvolucrandoPersonas from 'public/images/involucrando-personas.png'
 import RecursosEficientes from 'public/images/recursos-eficiente.png'
+import NuestroEquipo from 'public/images/nuestro-equipo.jpg'
+import NuestroEquipoMobile from 'public/images/nuestro-equipo-mobile.jpg'
+import AsesoriasCuadrada from 'public/images/asesorias-cuadrada.jpg'
+import CapacitacionesCuadrada from 'public/images/capacitaciones-cuadrada.jpg'
+import DesarrolloProyectosCuadrada from 'public/images/desarrollo-proyectos-cuadrada.jpg'
+import ConsultoriasCuadrada from 'public/images/consultorias-cuadrada.jpg'
 
 export {
   LogoFooter,
@@ -71,6 +77,11 @@ export {
   IconProponemos,
   ManteniendoProcesos,
   InvolucrandoPersonas,
-  RecursosEficientes
-
+  RecursosEficientes, 
+  NuestroEquipo,
+  NuestroEquipoMobile,
+  AsesoriasCuadrada,
+  CapacitacionesCuadrada,
+  ConsultoriasCuadrada,
+  DesarrolloProyectosCuadrada
 }
