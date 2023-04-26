@@ -6,14 +6,10 @@ import {useRouter} from 'next/router';
 export const Header = () => {
   const [scrollTop, setScrollTop] = useState<number>(0);
   const [bgWhite, setBgWhite] = useState<boolean>(false);
-  const pathList = ['/404'];
+  const pathList = ['/404','/faqs'];
   const router = useRouter();
 
   useEffect(()=>{
-
-    //set bgWhite
-    setBgWhite(()=>pathList.includes(router.pathname));
-
     //adding scroll value to the state
     const handleScroll = () => {
       setScrollTop(window.scrollY);
@@ -32,7 +28,7 @@ export const Header = () => {
       <div className="wrapper">
         <div className="flex justify-between items-center">
           {
-            !bgWhite || scrollTop > 50 ? (
+            !pathList.includes(router.pathname) || scrollTop > 50 ? (
               <Link href="/">
                 <img 
                   src={Logo.src} 
@@ -56,27 +52,27 @@ export const Header = () => {
             <nav className="hidden lg:block">
               <ul className="flex items-center gap-x-8">
                 <li>
-                  <Link href="/" className={`${!bgWhite || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
+                  <Link href="/" className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
                     Inicio
                   </Link>
                 </li>
                 <li>
-                  <Link href="/nosotros" className={`${!bgWhite || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
+                  <Link href="/nosotros" className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
                     Sobre Optimmet
                   </Link>
                 </li>
                 <li>
-                  <Link href="/servicios" className={`${!bgWhite || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
+                  <Link href="/servicios" className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
                     Servicios
                   </Link>
                 </li>
                 <li>
-                  <Link href="/faqs" className={`${!bgWhite || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
+                  <Link href="/faqs" className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
                     Faqs
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className={`${!bgWhite || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
+                  <Link href="/blog" className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
                     Blog
                   </Link>
                 </li>

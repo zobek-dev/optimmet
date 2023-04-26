@@ -9,6 +9,8 @@ import IconClose from 'public/images/icon-close.svg'
 import WspSmall from 'public/images/wsp-small.svg'
 import Wsp from 'public/images/wsp.svg'
 import DiamodUnderlineGreen from 'public/images/diamond-underline-green.svg'
+import MailLightblue from 'public/images/mail-bluelight.svg'
+import PhoneLightBlue from 'public/images/phone-bluelight.svg'
 
 export { 
   Diamond,
@@ -21,5 +23,7 @@ export {
   IconClose,
   WspSmall,
   Wsp,
-  DiamodUnderlineGreen
+  DiamodUnderlineGreen,
+  MailLightblue,
+  PhoneLightBlue
 }

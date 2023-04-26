@@ -1,5 +1,9 @@
+import { HeaderAsesoria } from "@/components/Servicio"
+
 const Asesorias = () => {
-  return <h1>Asesorias</h1>
+  <>
+    <HeaderAsesoria/>
+  </>
 }
 
 export default Asesorias

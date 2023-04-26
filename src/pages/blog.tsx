@@ -1,6 +1,10 @@
+import { BlogHeader } from "@/components/Blog"
+
 const Blog = () => {
   return(
-    <h1>Blog</h1>
+    <>
+      <BlogHeader/>
+    </>
   )
 }
 

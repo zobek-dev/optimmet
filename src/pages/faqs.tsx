@@ -1,7 +1,10 @@
+import { FaqsTabs, FaqsTitle } from "@/components/Faqs"
+
 const Faqs = () => {
   return(
     <>
-      <h1>Faqs</h1>
+      <FaqsTitle/>
+      <FaqsTabs/>
     </>
   )
 }

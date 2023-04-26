@@ -1,5 +1,11 @@
+import { ContactSection } from "@/components/Contacto"
+
 const Contacto = () => {
-  return <h1>Contacto</h1>
+  return (
+    <>
+      <ContactSection/>
+    </>
+  )
 }
 
 export default Contacto
