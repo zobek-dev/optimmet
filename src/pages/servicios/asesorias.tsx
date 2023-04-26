@@ -1,9 +1,13 @@
-import { HeaderAsesoria } from "@/components/Servicio"
+import { AsesoriasContent, HeadingAsesorias, OtrosAsesorias } from "@/components/Asesorias"
 
 const Asesorias = () => {
+  return(
   <>
-    <HeaderAsesoria/>
+    <HeadingAsesorias/>
+    <AsesoriasContent/>
+    <OtrosAsesorias/>
   </>
+  )
 }
 
 export default Asesorias

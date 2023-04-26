@@ -12,6 +12,7 @@ import { HomeValores } from './HomeValores'
 import { HomeBlog } from './HomeBlog'
 import { PostCard } from './PostCard'
 import { CallToAction } from './CallToAction'
+import { MobileNav } from './MobileNav'
 
 export { 
   Header, 
@@ -27,5 +28,6 @@ export {
   HomeValores,
   HomeBlog, 
   PostCard, 
-  CallToAction
+  CallToAction,
+  MobileNav
 }

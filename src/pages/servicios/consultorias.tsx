@@ -1,5 +1,13 @@
+import { ConsultoriaContent, HeadingConsultoria, OtrosConsultorias } from "@/components/Consultorias";
+
 const Consultorias = () => {
-  return <h1>Consultorias Técnicas</h1>
+  return (
+    <>
+      <HeadingConsultoria/>
+      <ConsultoriaContent/>
+      <OtrosConsultorias/>
+    </>
+  )
 }
 
 export default Consultorias;

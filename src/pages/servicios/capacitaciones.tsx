@@ -1,5 +1,13 @@
+import { HeadingCapacitaciones, CapacitacionesContent, OtrosCapacitaciones } from "@/components/Capacitaciones"
+
 const Capacitaciones = () => {
-  return <h1>Capacitaciones</h1>
+  return (
+    <>
+      <HeadingCapacitaciones/>
+      <CapacitacionesContent/>
+      <OtrosCapacitaciones/>
+    </>
+  )
 }
 
 export default Capacitaciones

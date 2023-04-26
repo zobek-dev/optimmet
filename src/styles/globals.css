@@ -134,3 +134,38 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.heading-asesorias{
+  background-image: linear-gradient(180deg, rgba(8, 55, 107, 0.6) 0%, rgba(98, 207, 244, 0) 34.61%), url(../../public/images/asesorias-heading.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heading-capacitaciones{
+  background-image: linear-gradient(180deg, rgba(8, 55, 107, 0.6) 0%, rgba(98, 207, 244, 0) 34.61%), url(../../public/images/capacitaciones-heading.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heading-consultoria{
+  background-image: linear-gradient(180deg, rgba(8, 55, 107, 0.6) 0%, rgba(98, 207, 244, 0) 34.61%), url(../../public/images/heading-consultoria.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.desarrollo-heading{
+  background-image: linear-gradient(180deg, rgba(8, 55, 107, 0.6) 0%, rgba(98, 207, 244, 0) 34.61%), url(../../public/images/desarrollo-heading.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.asesorias-heading{
+  background-image: linear-gradient(180deg, rgba(8, 55, 107, 0.6) 0%, rgba(98, 207, 244, 0) 34.61%), url(../../public/images/asesorias-heading.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,6 +1,12 @@
+import { DesarrolloContent, HeadingDesarrollo, OtrosDesarrollo } from "@/components/Desarrollo";
+
 const DesarrolloProyectos = () => {
   return(
-    <h1>Desarrollo de proyectos de Sustentatibilidad</h1>
+    <>
+      <HeadingDesarrollo/>
+      <DesarrolloContent/>
+      <OtrosDesarrollo/>
+    </>
   )
 }
 

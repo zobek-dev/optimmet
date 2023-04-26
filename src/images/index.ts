@@ -40,6 +40,7 @@ import AsesoriasCuadrada from 'public/images/asesorias-cuadrada.jpg'
 import CapacitacionesCuadrada from 'public/images/capacitaciones-cuadrada.jpg'
 import DesarrolloProyectosCuadrada from 'public/images/desarrollo-proyectos-cuadrada.jpg'
 import ConsultoriasCuadrada from 'public/images/consultorias-cuadrada.jpg'
+import AsesoriasHeading from 'public/images/asesorias-heading.jpg'
 
 export {
   LogoFooter,
@@ -83,5 +84,6 @@ export {
   AsesoriasCuadrada,
   CapacitacionesCuadrada,
   ConsultoriasCuadrada,
-  DesarrolloProyectosCuadrada
+  DesarrolloProyectosCuadrada,
+  AsesoriasHeading
 }

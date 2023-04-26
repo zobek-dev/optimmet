@@ -2,10 +2,12 @@ import { Logo, LogoDark } from '@/images'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import {useRouter} from 'next/router';
+import { BurgerWhite } from '@/svg';
+import { MobileNav } from '@/components/MobileNav';
 
 export const Header = () => {
   const [scrollTop, setScrollTop] = useState<number>(0);
-  const [bgWhite, setBgWhite] = useState<boolean>(false);
+  const [open, setOpen ] = useState<boolean>(false);
   const pathList = ['/404','/faqs'];
   const router = useRouter();
 
@@ -24,12 +26,16 @@ export const Header = () => {
   },[])
   
   return (
+    <>
     <header className={`py-4 w-full z-[999] ${scrollTop && scrollTop > 50 ? 'sticky bg-[rgba(0,0,0,.5)]': 'absolute bg-transparent'} top-0 left-0 transitions-colors duration-150 ease-in-out`}>
       <div className="wrapper">
-        <div className="flex justify-between items-center">
+        <div className="grid grid-cols-5 lg:flex lg:justify-between items-center">
+          <button className="block lg:hidden col-span-1" onClick={()=>setOpen(true)}>
+              <BurgerWhite className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white':''}`} />  
+          </button>
           {
             !pathList.includes(router.pathname) || scrollTop > 50 ? (
-              <Link href="/">
+              <Link href="/" className="col-span-3 flex justify-center">
                 <img 
                   src={Logo.src} 
                   alt="Optimmet" 
@@ -38,7 +44,7 @@ export const Header = () => {
                   loading="eager"/>
               </Link>
             ):(
-              <Link href="/">
+              <Link href="/" className="col-span-3 flex justify-center">
                 <img 
                   src={LogoDark.src} 
                   alt="Optimmet" 
@@ -83,12 +89,12 @@ export const Header = () => {
                 </li>
               </ul>
             </nav>
-            <button className="block lg:hidden">
-              mobile-nav
-            </button>
           </div>
         </div>
       </div>
     </header>
+    <MobileNav open={open} setOpen={setOpen}/>      
+    </>
+    
   )
 }

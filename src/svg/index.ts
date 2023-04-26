@@ -11,6 +11,11 @@ import Wsp from 'public/images/wsp.svg'
 import DiamodUnderlineGreen from 'public/images/diamond-underline-green.svg'
 import MailLightblue from 'public/images/mail-bluelight.svg'
 import PhoneLightBlue from 'public/images/phone-bluelight.svg'
+import CapacitacionesSymbol from 'public/images/capacitaciones-icon.svg'
+import ConsultoriaTecnicaSymbol from 'public/images/consultoria-tecnica-symbol.svg'
+import DesarrolloSymbol from 'public/images/desarrollo-symbol.svg'
+import AsesoriasSymbol from 'public/images/asesorias-symbol.svg'
+import BurgerWhite from 'public/images/burger-white.svg'
 
 export { 
   Diamond,
@@ -25,5 +30,10 @@ export {
   Wsp,
   DiamodUnderlineGreen,
   MailLightblue,
-  PhoneLightBlue
+  PhoneLightBlue,
+  CapacitacionesSymbol,
+  ConsultoriaTecnicaSymbol,
+  DesarrolloSymbol,
+  AsesoriasSymbol,
+  BurgerWhite
 }
