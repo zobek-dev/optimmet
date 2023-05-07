@@ -16,6 +16,7 @@ import ConsultoriaTecnicaSymbol from 'public/images/consultoria-tecnica-symbol.s
 import DesarrolloSymbol from 'public/images/desarrollo-symbol.svg'
 import AsesoriasSymbol from 'public/images/asesorias-symbol.svg'
 import BurgerWhite from 'public/images/burger-white.svg'
+import InstagramSmall from 'public/images/instagram-icon-v2.svg';
 
 export { 
   Diamond,
@@ -35,5 +36,6 @@ export {
   ConsultoriaTecnicaSymbol,
   DesarrolloSymbol,
   AsesoriasSymbol,
-  BurgerWhite
+  BurgerWhite,
+  InstagramSmall
 }
