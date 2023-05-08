@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Facebook, Linkedin } from "@/images";
 import { useRouter } from "next/router";
+import Head from "next/head";
+import Script from "next/script"
 
 interface Post {
   id: number;
@@ -27,6 +29,8 @@ interface Props {
   author: string;
 }
 
+declare const IN: any;
+
 
 function Post({ post, image, author }: Props) {
   const published = moment(post.date).format("DD [de] MMMM [de] YYYY");
@@ -38,11 +42,32 @@ function Post({ post, image, author }: Props) {
     if (typeof globalThis?.window !== undefined){
       setHost(window.location.host);
     }
+
+    if(typeof IN !== "undefined"){
+      IN.parse();
+    }
   },[])
 
-  console.log(host)
+  const handleShareClick = () => {
+    window.open(
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+        'https://' + host + router.asPath
+      )}`,
+      "popup",
+      "width=600,height=600"
+    );
+  };
   
   return (
+    <>
+    <Head>
+      <Script
+        type="text/javascript"
+        src="//platform.linkedin.com/in.js"
+        async
+        defer
+      />
+    </Head>
     <div className="bg-white">
       <div className="wrapper">
         <div className="prose lg:prose-xl mx-auto py-28 lg:py-40">
@@ -79,7 +104,7 @@ function Post({ post, image, author }: Props) {
             <span className="text-[#556170] text-[20px]">Compartir en:</span>
             <ul className="flex items-center gap-x-2" style={{ paddingLeft: '0'}}>
               <Link
-                href={`https://facebook.com/sharer.php?u=${host}${router.asPath}`}
+                href={`https://facebook.com/sharer.php?u=https://${host}${router.asPath}`}
                 rel="noopener noreferrer"
                 className="my-0 transition-opacity duration-200 ease-linear hover:opacity-70"
                 target="_blank"
@@ -93,11 +118,9 @@ function Post({ post, image, author }: Props) {
                   loading="lazy"
                 />
               </Link>
-              <Link
-                href="https://www.linkedin.com/company/optimmet"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleShareClick}
                 className="my-0 transition-opacity duration-200 ease-linear hover:opacity-70"
-                target="_blank"
               >
                 <img
                   src={Linkedin.src}
@@ -107,7 +130,7 @@ function Post({ post, image, author }: Props) {
                   style={{ marginTop: '0', marginBottom: '0'}}
                   loading="lazy"
                 />
-              </Link>
+              </button>
             </ul>
           </div>
           
@@ -115,6 +138,8 @@ function Post({ post, image, author }: Props) {
         </div>
       </div>
     </div>
+    </>
+    
   );
 }
 
