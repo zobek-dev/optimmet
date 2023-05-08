@@ -73,12 +73,12 @@ export const FaqsTabs = () => {
     <div className="max-w-[855px] mx-auto px-2 tabs-acordion mt-[64px] mb-[120px]">
       <Fragment>
         {faqs && faqs.map((faq,index)=>(
-          <Accordion className="bg-white rounded-[10px] rounded-bl-none border border-[#62cff4] mb-4" key={index} open={open === index + 1} icon={<Icon id={index + 1} open={open} />}>
-            <AccordionHeader className="px-6 py-6 font-montserrat border-b-transparent" onClick={() => handleOpen(index + 1)}>
-              <h3 className="text-[#62cff4] text-left font-bold text-[17px]">{faq.question}</h3>
-            </AccordionHeader>
-            <AccordionBody className="px-6 py-6 font-montserrat prose text-[17px] font-light" dangerouslySetInnerHTML={{ __html: faq.answer }}>
-            </AccordionBody>
+        <Accordion className="bg-white rounded-[10px] rounded-bl-none border border-[#62cff4] mb-4" key={index} open={open === index + 1} icon={<Icon id={index + 1} open={open} />}>
+          <AccordionHeader className="px-6 py-6 font-montserrat border-b-transparent" onClick={() => handleOpen(index + 1)}>
+            <h3 className="text-[#62cff4] text-left font-bold text-[17px]">{faq.question}</h3>
+          </AccordionHeader>
+          <AccordionBody className="px-6 py-6 font-montserrat prose text-[17px] font-light" dangerouslySetInnerHTML={{ __html: faq.answer }}>
+          </AccordionBody>
         </Accordion>
         ))}       
       </Fragment>
@@ -88,9 +88,6 @@ export const FaqsTabs = () => {
 
 
 
-
-// { faqs && faqs.map((faq,index) => <div  className="prose mx-auto">
-//           </div>)}
 
 
 

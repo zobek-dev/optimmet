@@ -24,17 +24,16 @@ export const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     }
   },[])
-  
   return (
     <>
     <header className={`py-4 w-full z-[999] ${scrollTop && scrollTop > 50 ? 'sticky bg-[rgba(0,0,0,.5)]': 'absolute bg-transparent'} top-0 left-0 transitions-colors duration-150 ease-in-out`}>
       <div className="wrapper">
         <div className="grid grid-cols-5 lg:flex lg:justify-between items-center">
           <button className="block lg:hidden col-span-1" onClick={()=>setOpen(true)}>
-              <BurgerWhite className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white':''}`} />  
+              <BurgerWhite className={`${(!pathList.includes(router.pathname) || scrollTop > 50) && (router.query.slug == undefined || scrollTop > 50) ? 'text-white':''}`} />  
           </button>
           {
-            !pathList.includes(router.pathname) || scrollTop > 50 ? (
+            (!pathList.includes(router.pathname) || scrollTop > 50) && (router.query.slug == undefined || scrollTop > 50) ? (
               <Link href="/" className="col-span-3 flex justify-center">
                 <img 
                   src={Logo.src} 
@@ -58,27 +57,27 @@ export const Header = () => {
             <nav className="hidden lg:block">
               <ul className="flex items-center gap-x-8">
                 <li>
-                  <Link href="/" className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
+                  <Link href="/" className={`${(!pathList.includes(router.pathname) || scrollTop > 50) && (router.query.slug == undefined || scrollTop > 50) ? 'text-white' : ''} font-light text-[15px]`}>
                     Inicio
                   </Link>
                 </li>
                 <li>
-                  <Link href="/nosotros" className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
+                  <Link href="/nosotros" className={`${(!pathList.includes(router.pathname) || scrollTop > 50) && (router.query.slug == undefined || scrollTop > 50) ? 'text-white' : ''} font-light text-[15px]`}>
                     Sobre Optimmet
                   </Link>
                 </li>
                 <li>
-                  <Link href="/servicios" className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
+                  <Link href="/servicios" className={`${(!pathList.includes(router.pathname) || scrollTop > 50) && (router.query.slug == undefined || scrollTop > 50) ? 'text-white' : ''} font-light text-[15px]`}>
                     Servicios
                   </Link>
                 </li>
                 <li>
-                  <Link href="/faqs" className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
+                  <Link href="/faqs" className={`${(!pathList.includes(router.pathname) || scrollTop > 50) && (router.query.slug == undefined || scrollTop > 50) ? 'text-white' : ''} font-light text-[15px]`}>
                     Faqs
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className={`${!pathList.includes(router.pathname) || scrollTop > 50 ? 'text-white' : ''} font-light text-[15px]`}>
+                  <Link href="/blog" className={`${(!pathList.includes(router.pathname) || scrollTop > 50) && (router.query.slug == undefined || scrollTop > 50) ? 'text-white' : ''} font-light text-[15px]`}>
                     Blog
                   </Link>
                 </li>
