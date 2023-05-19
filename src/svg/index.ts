@@ -17,6 +17,8 @@ import DesarrolloSymbol from 'public/images/desarrollo-symbol.svg'
 import AsesoriasSymbol from 'public/images/asesorias-symbol.svg'
 import BurgerWhite from 'public/images/burger-white.svg'
 import InstagramSmall from 'public/images/instagram-icon-v2.svg';
+import SwiperNextIcon from 'public/images/swiper-next-icon.svg';
+import SwiperPrevIcon from 'public/images/swiper-prev-icon.svg';
 
 export { 
   Diamond,
@@ -37,5 +39,7 @@ export {
   DesarrolloSymbol,
   AsesoriasSymbol,
   BurgerWhite,
-  InstagramSmall
+  InstagramSmall,
+  SwiperNextIcon,
+  SwiperPrevIcon
 }

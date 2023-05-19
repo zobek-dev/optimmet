@@ -13,6 +13,8 @@ import { HomeBlog } from './HomeBlog'
 import { PostCard } from './PostCard'
 import { CallToAction } from './CallToAction'
 import { MobileNav } from './MobileNav'
+import { SwiperNextBtn } from './SwiperNextBtn'
+import { SwiperPrevBtn } from './SwiperPrevBtn'
 
 export { 
   Header, 
@@ -29,5 +31,7 @@ export {
   HomeBlog, 
   PostCard, 
   CallToAction,
-  MobileNav
+  MobileNav,
+  SwiperPrevBtn,
+  SwiperNextBtn
 }

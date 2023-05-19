@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Hero/>
-      <HomeMarcas/> 
+      <HomeMarcas/>
       <HomeSobre/>
       <HomeServices/>       
       <HomeNosEligen/>
