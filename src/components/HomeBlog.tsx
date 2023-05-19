@@ -1,33 +1,26 @@
-import { DummyBlog } from "@/images"
-import { StaticImageData } from "next/image"
 import { DiamondUnderline } from "@/svg"
-import { PostCard } from "./PostCard"
+import { PostCard } from "./PostCard";
 
-const posts = [
-  {
-    title: "Lorem, ipsum dolor.",
-    excerpt: "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur dolores quia quibusdam consequuntur nostrum quasi quos labore harum id blanditiis!</p>",
-    image: DummyBlog,
-    slug: "adfadfadf",
-    published_at: "22-08-2023"
-  },
-  {
-    title: "Lorem, ipsum dolor.",
-    excerpt: "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur dolores quia quibusdam consequuntur nostrum quasi quos labore harum id blanditiis!</p>",
-    image: DummyBlog,
-    slug: "adfadfadf",
-    published_at: "22-08-2023"
-  },
-  {
-    title: "Lorem, ipsum dolor.",
-    excerpt: "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur dolores quia quibusdam consequuntur nostrum quasi quos labore harum id blanditiis!</p>",
-    image: DummyBlog,
-    slug: "adfadfadf",
-    published_at: "22-08-2023"
-  }
-]
+interface Post {
+  id: number;
+  title: { rendered: string };
+  content: { rendered: string };
+  excerpt: { rendered: string};
+  date: string;
+  _embedded: {
+    'wp:featuredmedia'?: {
+      source_url: string;
+    }[];
+  };
+  slug: string;
+}
 
-export const HomeBlog = () => {
+
+interface Props{
+  posts: Post[];
+}
+
+export const HomeBlog = ({posts}: Props) => {
   return(
     <section className="py-12 lg:py-24">
       <div className="wrapper">
@@ -35,9 +28,10 @@ export const HomeBlog = () => {
         <p className="font-light text-[17px] lg:text-[20px] text-center mb-2">Conoce más sobre temas de eficiencia y mucho más.</p>
         <DiamondUnderline className="mx-auto mb-8"/>
         <ul tabIndex={-1} className="grid md:grid-cols-3 gap-8 md:gap-4 justify-items-center">
-          {posts && posts.map((post,index)=>(
-            <PostCard key={index} post={post}/>
-          ))}
+          {posts && posts.map((post,index)=> (
+              <PostCard key={index} id={post.id}/>
+            ))
+          }
         </ul>
       </div>
     </section>

@@ -52,27 +52,27 @@ export const Footer = () => {
           <div>
             <ul>
               <li>
-                <Link href="/nosotros" className="text-[15px] leading-[1.5] mb-4 inline-block">
+                <Link href="/nosotros" className="text-[15px] leading-[1.5] mb-4 inline-block font-light hover:underline hover:underline-offset-2">
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/nosotros" className="text-[15px] leading-[1.5] mb-4 inline-block font-light">
+                <Link href="/nosotros" className="text-[15px] leading-[1.5] mb-4 inline-block font-light hover:underline hover:underline-offset-2">
                   Sobre Optimmet
                 </Link>
               </li>
               <li>
-                <Link href="/faqs" className="text-[15px] leading-[1.5] mb-4 inline-block font-light"> 
+                <Link href="/faqs" className="text-[15px] leading-[1.5] mb-4 inline-block font-light hover:underline hover:underline-offset-2"> 
                   FAQS
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-[15px] leading-[1.5] mb-4 inline-block font-light"> 
+                <Link href="/blog" className="text-[15px] leading-[1.5] mb-4 inline-block font-light hover:underline hover:underline-offset-2"> 
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/contacto" className="text-[15px] leading-[1.5] mb-4 inline-block font-light">
+                <Link href="/contacto" className="text-[15px] leading-[1.5] mb-4 inline-block font-light hover:underline hover:underline-offset-2">
                   Contáctanos   
                 </Link> 
               </li>
@@ -84,25 +84,25 @@ export const Footer = () => {
             </h4>
             <ul>
               <li className="mb-2 block leading-none">
-                <Link href="/servicios/asesorias" className="inline-flex gap-x-2 items-start">
+                <Link href="/servicios/asesorias" className="inline-flex gap-x-2 items-start hover:underline hover:underline-offset-2">
                   <span><Diamond/></span>
                   <span className="text-[15px] font-light leading-[1.2]">Asesorías en Eficiencia Energética y Gestión de la Energía</span>
                 </Link>
               </li>
               <li className="mb-2 block leading-none">
-                <Link href="/servicios/consultorias" className="inline-flex gap-x-2 items-start">
+                <Link href="/servicios/consultorias" className="inline-flex gap-x-2 items-start hover:underline hover:underline-offset-2">
                   <span><Diamond/></span>
                   <span className="text-[15px] font-light leading-[1.2]">Consultarías Técnicas - Procesos Minero Metalúrgicos</span>
                 </Link>
               </li>
               <li className="mb-2 block leading-none">
-                <Link href="/servicios/proyectos" className="inline-flex gap-x-2 items-start">
+                <Link href="/servicios/proyectos" className="inline-flex gap-x-2 items-start hover:underline hover:underline-offset-2">
                   <span><Diamond/></span>
                   <span className="text-[15px] font-light leading-[1.2]">Desarrollo de Proyectos de Sustentabilidad</span>
                 </Link>
               </li>
               <li className="mb-2 block leading-none">
-                <Link href="/servicios/capacitaciones" className="inline-flex gap-x-2 items-start">
+                <Link href="/servicios/capacitaciones" className="inline-flex gap-x-2 items-start hover:underline hover:underline-offset-2">
                   <span><Diamond/></span>
                   <span className="text-[15px] font-light leading-[1.2]">Capacitaciones Ténicas</span>
                 </Link>
@@ -115,19 +115,19 @@ export const Footer = () => {
             </h4>
             <ul>
               <li className="mb-2">
-                <Link href="tel:+56983315589" className="inline-flex gap-4 items-center">
+                <Link href="tel:+56983315589" className="inline-flex gap-4 items-center hover:underline hover:underline-offset-2">
                   <span><Phone/></span>
                   <span className="text-[15px] font-light">+56 9 8331 5589</span>
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="mailto:contacto@cellmed.cl" className="inline-flex gap-4 items-center">
+                <Link href="mailto:contacto@cellmed.cl" className="inline-flex gap-4 items-center hover:underline hover:underline-offset-2">
                   <span><Mail/></span>
                   <span className="text-[15px] font-light">contacto@cellmed.cl</span>
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="#" className="inline-flex gap-4 items-center">
+                <Link href="#" className="inline-flex gap-4 items-center hover:underline hover:underline-offset-2">
                   <span><Location/></span>
                   <span className="text-[15px] font-light">Santiago, Chile</span>
                 </Link>
