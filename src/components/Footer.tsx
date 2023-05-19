@@ -18,7 +18,7 @@ export const Footer = () => {
             loading="lazy"/>
             <ul className="flex gap-x-2 items-center">
               <li>
-                <Link href="https://www.instagram.com/optimmet_ingenieria/" rel="noopener noreferrer">
+                <Link href="https://www.instagram.com/optimmet_ingenieria/" rel="noopener noreferrer" className="transition-opacity duration-200 ease-in-out hover:opacity-50">
                   <img 
                   src={Instagram.src} 
                   width={Instagram.width}
@@ -28,7 +28,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="https://www.instagram.com/optimmet_ingenieria/" rel="noopener noreferrer">
+                <Link href="https://www.instagram.com/optimmet_ingenieria/" rel="noopener noreferrer" className="transition-opacity duration-200 ease-in-out hover:opacity-50">
                   <img 
                   src={Facebook.src} 
                   width={Facebook.width}
@@ -38,7 +38,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="https://www.linkedin.com/company/optimmet" rel="noopener noreferrer">
+                <Link href="https://www.linkedin.com/company/optimmet" rel="noopener noreferrer" className="transition-opacity duration-200 ease-in-out hover:opacity-50">
                   <img 
                   src={Linkedin.src} 
                   width={Linkedin.width}
@@ -104,7 +104,7 @@ export const Footer = () => {
               <li className="mb-2 block leading-none">
                 <Link href="/servicios/capacitaciones" className="inline-flex gap-x-2 items-start hover:underline hover:underline-offset-2">
                   <span><Diamond/></span>
-                  <span className="text-[15px] font-light leading-[1.2]">Capacitaciones Ténicas</span>
+                  <span className="text-[15px] font-light leading-[1.2]">Capacitaciones Técnicas</span>
                 </Link>
               </li>
             </ul>
