@@ -61,13 +61,14 @@ function Post({ post, image, author }: Props) {
   return (
     <>
     <Head>
-      <Script
+      
+    </Head>
+    <Script
         type="text/javascript"
         src="//platform.linkedin.com/in.js"
         async
         defer
       />
-    </Head>
     <div className="bg-white">
       <div className="wrapper">
         <div className="prose lg:prose-xl mx-auto py-28 lg:py-40">
