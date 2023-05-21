@@ -21,15 +21,15 @@ export async function getStaticProps(){
 
   // https://mediahuella.com/blog-optimmet/wp-json/wp/v2/posts/
 
-  // const insta = await axios(url);
-  // const feed = insta.data;
+  const insta = await axios(url);
+  const feed = insta.data;
 
   const wpPosts = await axios(wp_url);
   const posts = wpPosts.data;
 
-  //console.log(feed);
+  console.log(feed);
   // const feed = await axios
   return { props: {
-     posts, wp
+     posts, wp, feed
   }};
 }
