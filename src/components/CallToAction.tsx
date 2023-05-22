@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { DiamondBig, Wsp, WspSmall } from "@/svg"
-import { ReduccionSmall, SistemaSmall } from "@/images"
+import { ReduccionSmall, SistemaSmall, AuditoriaSmall, Footer3 } from "@/images"
 
 export const CallToAction = () => {
   return(
@@ -27,53 +27,39 @@ export const CallToAction = () => {
         </div>
       </section>
       <section className="flex flex-col md:flex-row w-full overflow-hidden">
-        <div className="flex flex-row">
-          <img 
-            src={SistemaSmall.src} 
-            alt="Sistema de Gestión de la Energía" 
-            width={SistemaSmall.width}
-            height={SistemaSmall.height}
-            className="object-cover object-center col-span-4 flex-1" 
-            loading="lazy"
-          />
-          <div className="bg-[#62CFF4] text-white px-4 flex items-center col-span-3">
-            <span className="text-[18px] font-bold text-center block">Sistemas de <br/> Gestión de la <br/>Energía</span>
-          </div>
-        </div>
-        <div className="flex flex-row-reverse md:flex-row">
+        <div className="flex flex-row md:w-1/3">
           <img 
             src={SistemaSmall.src} 
             alt="Sistema de Gestión de la Energía"
-            width={SistemaSmall.width}
-            height={SistemaSmall.height} 
-            className="aspect-[4/3] object-fill object-center" 
+            className="object-cover object-center w-2/3" 
             loading="lazy"
           />
-          <div className="bg-[#FC715E] text-white px-4 flex items-center">
-            <span className="text-[18px] font-bold text-center">Auditorías<br/> energéticas</span>
+          <div className="bg-[#62CFF4] text-white px-4 flex items-center w-1/3">
+            <span className="text-sm md:text-[18px] font-bold text-center block w-full">Sistemas de <br/> Gestión de la <br/>Energía</span>
           </div>
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-row-reverse md:flex-row md:w-1/3">
           <img 
-            src={SistemaSmall.src} 
+            src={AuditoriaSmall.src} 
             alt="Sistema de Gestión de la Energía"
-            width={SistemaSmall.width}
-            height={SistemaSmall.height}  
-            className="aspect-[4/3] object-fill object-center" 
+            className="object-cover object-center w-2/3" 
             loading="lazy"
           />
-          <div className="bg-[#FC715E] text-white px-4 flex items-center">
-            <span className="text-[18px] font-bold text-center">Auditorías<br/> energéticas</span>
+          <div className="bg-[#C7E22B] text-white px-4 flex items-center w-1/3">
+            <span className="text-sm md:text-[18px] font-bold text-center block w-full">Reducción<br/> de GEI</span>
           </div>
+        </div>
+        <div className="flex flex-row md:w-1/3">
           <img 
-            src={SistemaSmall.src} 
+            src={Footer3.src} 
             alt="Sistema de Gestión de la Energía" 
-            className="aspect-[4/3] object-fill object-center hidden md:block" 
-            width={SistemaSmall.width}
-            height={SistemaSmall.height}
+            className="object-cover object-center w-2/3" 
             loading="lazy"
           />
-        </div>
+          <div className="bg-[#FC715E] text-white px-4 flex items-center w-1/3">
+            <span className="text-sm md:text-[18px] font-bold text-center block w-full">Auditorías<br/> energéticas</span>
+          </div>
+        </div> 
       </section>
     </>
   )

@@ -29,7 +29,7 @@ export const Project = ({ project }: Proyecto) => {
           loading="lazy"
         />
         <div className="bg-white py-6 px-6 rounded-tl-[10px] rounded-br-[10px] border border-[#62cff4] w-[90%] translate-x-8 -translate-y-24 relative group-hover:bg-[#62cff4] transition-colors ease-in-out duration-200 min-w-[256px]">
-          <h3 className="line-clamp-3 text-[17px] font-medium mb-4 group-hover:text-white transition-colors ease-in-out duration-200">{project.title}</h3>
+          <h3 className="line-clamp-3 text-[17px] font-medium mb-4 group-hover:text-white transition-colors ease-in-out duration-200 min-h-[80px]">{project.title}</h3>
           <span className="block border border-[#62cff4] bg-[#62cff4] w-max text-sm font-medium text-white rounded-tl-[8px] rounded-tr-[8px] rounded-br-[8px] py-2 px-2 mb-2 -translate-x-16 group-hover:text-[#62cff4] group-hover:bg-white transition-colors ease-in-out duration-200">{company}</span>
           <span className="block border border-[#62cff4] bg-[#E5F9FF] w-max text-sm font-medium text-[#62cFF4] rounded-tl-[8px] rounded-tr-[8px] rounded-br-[8px] py-2 px-2 mb-2 -translate-x-16">{type}</span>
         </div>

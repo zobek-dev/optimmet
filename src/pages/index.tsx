@@ -36,10 +36,8 @@ export default function Home({ posts}: any) {
 export async function getStaticProps(){
   const url = `${process.env.WPBLOG_URI}wp-json/wp/v2/posts?per_page=3`
 
-  const response = await axios<Post[]>(url)
+  const response = await axios<Post[]>(url);
   const posts = response.data;
-  console.log(url); 
-  console.log(posts)
 
   return {
     props:{

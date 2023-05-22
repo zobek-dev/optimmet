@@ -52,8 +52,7 @@ export const HomeServices = () => {
     <section className="py-12 lg:py-20">
       <div className="wrapper">
         <h2 className="text-center text-[25px] lg:text-[40px] font-bold leading-[1.2]">
-          Nuestros 
-          <strong className="text-[#FC715E] font-bold">servicios</strong>
+          Nuestros <strong className="text-[#FC715E] font-bold">servicios</strong>
         </h2>
         <p className="text-[17px] lg:text-[20px] text-center">
           cómo podemos apoyar a tu empresa

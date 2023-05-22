@@ -41,6 +41,8 @@ import CapacitacionesCuadrada from 'public/images/capacitaciones-cuadrada.jpg'
 import DesarrolloProyectosCuadrada from 'public/images/desarrollo-proyectos-cuadrada.jpg'
 import ConsultoriasCuadrada from 'public/images/consultorias-cuadrada.jpg'
 import AsesoriasHeading from 'public/images/asesorias-heading.jpg'
+import AuditoriaSmall from 'public/images/auditoria-small.jpg'
+import Footer3 from 'public/images/footer-3.jpg'
 
 export {
   LogoFooter,
@@ -72,6 +74,7 @@ export {
   ImageCTA,
   SistemaSmall,
   ReduccionSmall,
+  AuditoriaSmall,
   Plug404,
   LogoDark, 
   SobreOptimmet,
@@ -85,5 +88,6 @@ export {
   CapacitacionesCuadrada,
   ConsultoriasCuadrada,
   DesarrolloProyectosCuadrada,
-  AsesoriasHeading
+  AsesoriasHeading,
+  Footer3
 }

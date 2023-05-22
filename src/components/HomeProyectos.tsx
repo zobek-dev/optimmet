@@ -52,7 +52,7 @@ export const HomeProyectos = () => {
     <>
       <section className="py-12 lg:py-24">
         <div className="wrapper">
-          <h2 className="text-center font-bold text-[30px] lg:text-[40px] leading-[1.2] mb-2">Proyectos Destacados</h2>
+          <h2 className="text-center font-bold text-[30px] lg:text-[40px] leading-[1.2] mb-2">Proyectos <strong className="font-bold text-[#FC715E]">Destacados</strong></h2>
           <p className="font-light text-[17px] lg:text-[20px] text-center mb-2">Concoce nuestros proyectos destacados</p>
           <DiamondUnderline className="mx-auto mb-8"/>
           <ul tabIndex={-1} className="grid sm:grid-cols-2 xl:grid-cols-4 gap-8">
