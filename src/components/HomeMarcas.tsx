@@ -64,6 +64,10 @@ const companies: Company[] = [
 ];
 
 const breakpoints = {
+  150: {
+    slidesPerView: 1,
+    spaceBetween: 16,
+  },
   640: {
     slidesPerView: 3,
     spaceBetween: 16,
@@ -87,8 +91,9 @@ export const HomeMarcas = () => {
         </h2>
 
         <Swiper 
-          slidesPerView={1}
+          slidesPerView="auto"
           loop={true}
+          className="my-8"
           breakpoints={breakpoints}
           onSlideChange={()=>{}}
           onSwiper={(swiper) => {}}
@@ -118,7 +123,6 @@ export const HomeMarcas = () => {
           <SwiperNextBtn/>
           <SwiperPrevBtn/>   
         </Swiper>
-        
       </div>
     </section>
   );
