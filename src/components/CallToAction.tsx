@@ -15,10 +15,10 @@ export const CallToAction = () => {
             </p>
           </div>
           <div className="flex flex-col gap-4">
-            <Link href="/contacto" className="bg-[#C7E22B] inline-block text-[#556170] font-medium py-2 px-8 rounded-[32px] text-sm lg:text-base text-center">
+            <Link href="/contacto" className="bg-[#C7E22B] border border-[#C7E22B] inline-block text-[#556170] font-medium py-2 px-8 rounded-[32px] text-sm lg:text-base text-center transition-colors duration-200 ease-in-out hover:bg-[#556170] hover:border-[#556170] hover:text-[#C7E22B]">
               Escribenos
             </Link>
-            <Link href="#" target="_blank" className="bg-white inline-block text-[#556170] font-medium py-2 px-6 rounded-[32px] relative text-sm lg:text-base border border-[#556170] text-center">
+            <Link href="#" target="_blank" className="bg-white inline-block text-[#556170] font-medium py-2 px-6 rounded-[32px] relative text-sm lg:text-base border border-[#556170] text-center transition-colors duration-200 ease-in-out hover:bg-[#556170] hover:text-white">
               <Wsp className="hidden md:inline-block absolute top-0 -left-1 -translate-y-2"/>
               <WspSmall className="inline-block md:hidden absolute -left-1 top-0"/>
               <span className="ml-4 md:ml-8 inline-block">Conversemos</span>

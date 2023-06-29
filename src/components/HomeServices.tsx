@@ -1,10 +1,10 @@
 import { DiamondUnderline } from "@/svg";
 import { StaticImageData } from "next/image";
 import {
-  AsesoriasCard,
-  ConsultoriasCard,
-  DesarrollosCard,
-  CapacitacionesCard,
+  AsesoriasCuadrada,
+  ConsultoriasCuadrada,
+  DesarrolloProyectosCuadrada,
+  CapacitacionesCuadrada
 } from "@/images";
 import { ServiceCard } from "./Servicios";
 import Link from "next/link";
@@ -21,28 +21,28 @@ const services: IService[] = [
     title: "Asesorías en Eficiencia Energética y Gestión de la Energía",
     excerpt:
       "Asesoramos en la Optimización y uso eficiente de la Energía, Desarrollo de Diagnósticos y revisiones Energéticas...",
-    image: AsesoriasCard,
+    image: AsesoriasCuadrada,
     url: "/servicios/asesorias",
   },
   {
     title: "Consultorías Técnicas - Procesos Minero Metalúrgicos",
     excerpt:
       "Apoyamos la Optimización de los procesos de su organización a través del desarrollo de Consultorías Técnicas...",
-    image: ConsultoriasCard,
+    image: ConsultoriasCuadrada,
     url: "/servicios/consultorias",
   },
   {
     title: "Desarrollo de Proyectos de Sustentabilidad",
     excerpt:
       "Desarrollamos Inventarios e informes de Huella de Carbono, Análisis de Huella Hídrica, apoyamos la búsqueda...",
-    image: DesarrollosCard,
+    image: DesarrolloProyectosCuadrada,
     url: "/servicios/desarrollo-proyectos",
   },
   {
     title: "Capacitaciones Técnicas",
     excerpt:
       "Generamos el desarrollo de Capacidades en temáticas relacionadas con los proyectos y servicios brindados en las áreas de Energía...",
-    image: CapacitacionesCard,
+    image: CapacitacionesCuadrada,
     url: "/servicios/capacitaciones",
   },
 ];
