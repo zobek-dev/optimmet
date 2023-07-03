@@ -43,6 +43,7 @@ import ConsultoriasCuadrada from 'public/images/consultorias-cuadrada.jpg'
 import AsesoriasHeading from 'public/images/asesorias-heading.jpg'
 import AuditoriaSmall from 'public/images/auditoria-small.jpg'
 import Footer3 from 'public/images/footer-3.jpg'
+import EquipoOptimmet from 'public/images/equipo-optimmet.jpg'
 
 export {
   LogoFooter,
@@ -83,6 +84,7 @@ export {
   InvolucrandoPersonas,
   RecursosEficientes, 
   NuestroEquipo,
+  EquipoOptimmet,
   NuestroEquipoMobile,
   AsesoriasCuadrada,
   CapacitacionesCuadrada,

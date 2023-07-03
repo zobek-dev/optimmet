@@ -13,7 +13,7 @@ export const Proponemos = () => {
             los recursos</strong> energéticos e hídricos, basado en metodologías y
             normativas internacionales de mejora continua.
           </p>
-         <img
+          <img
             src={IconProponemos.src}
             alt="proponemos"
             width={IconProponemos.width}
@@ -21,9 +21,9 @@ export const Proponemos = () => {
             className="my-4 lg:my-0"
             loading="lazy"
           />
-          <Link href="/servicios" className="block absolute -bottom-[21px] left-1/2 -translate-x-1/2 lg:translate-x-0  lg:left-8 bg-[#C7E22B] w-max px-4 py-2 rounded-[32px] text-[#556170] text-[17px] font-medium">
+          {/* <Link href="/servicios" className="block absolute -bottom-[21px] left-1/2 -translate-x-1/2 lg:translate-x-0  lg:left-8 bg-[#C7E22B] w-max px-4 py-2 rounded-[32px] text-[#556170] text-[17px] font-medium">
             Ve Nuestros Proyectos
-          </Link>
+          </Link> */}
         </div>
         <DiamondBig className="absolute -bottom-[24px] right-4"/>
       </div>

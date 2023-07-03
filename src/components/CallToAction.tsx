@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { DiamondBig, Wsp, WspSmall } from "@/svg"
-import { ReduccionSmall, SistemaSmall, AuditoriaSmall, Footer3 } from "@/images"
+import { SistemaSmall, AuditoriaSmall, Footer3 } from "@/images"
 
 export const CallToAction = () => {
   return(
@@ -14,11 +14,13 @@ export const CallToAction = () => {
               Conversemos y definamos como podemos apoyar a tu organización en la gestión de energía, procesos de mejora y todo lo que involucre eficiencia energética.
             </p>
           </div>
+          
           <div className="flex flex-col gap-4">
-            <Link href="/contacto" className="bg-[#C7E22B] border border-[#C7E22B] inline-block text-[#556170] font-medium py-2 px-8 rounded-[32px] text-sm lg:text-base text-center transition-colors duration-200 ease-in-out hover:bg-[#556170] hover:border-[#556170] hover:text-[#C7E22B]">
+            <Link href="/contacto" className="bg-[#C7E22B] border border-[#C7E22B] inline-block text-[#556170] font-medium py-2 px-8 rounded-[32px] text-sm lg:text-base text-center transition-opacity ease-in-out duration-200 hover:opacity-70">
               Escribenos
             </Link>
-            <Link href="#" target="_blank" className="bg-white inline-block text-[#556170] font-medium py-2 px-6 rounded-[32px] relative text-sm lg:text-base border border-[#556170] text-center transition-colors duration-200 ease-in-out hover:bg-[#556170] hover:text-white">
+            {/* falta link de wsp */}
+            <Link href="#" target="_blank" className="bg-white inline-block text-[#556170] font-medium py-2 px-6 rounded-[32px] relative text-sm lg:text-base border border-[#556170] text-center transition-opacity ease-in-out duration-200 hover:opacity-70">
               <Wsp className="hidden md:inline-block absolute top-0 -left-1 -translate-y-2"/>
               <WspSmall className="inline-block md:hidden absolute -left-1 top-0"/>
               <span className="ml-4 md:ml-8 inline-block">Conversemos</span>

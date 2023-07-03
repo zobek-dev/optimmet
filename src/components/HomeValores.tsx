@@ -65,10 +65,10 @@ export const HomeValores = () => {
             Si quieres implementar sistemas de gestión de energía, procesos de mejora, optimización de procesos y más.
           </p>
           <div className="flex gap-x-2 lg:gap-x-4">
-            <Link href="/contacto" className="bg-[#C7E22B] border border-[#C7E22B] inline-block text-[#556170] font-medium py-2 px-8 rounded-[32px] text-sm lg:text-base transition-colors duration-200 ease-in-out hover:border-[#556170] hover:bg-[#556170] hover:text-[#C7E22B]">
+            <Link href="/contacto" className="bg-[#C7E22B] border border-[#C7E22B] inline-block text-[#556170] font-medium py-2 px-8 rounded-[32px] text-sm lg:text-base transition-opacity duration-200 ease-in-out hover:opacity-70">
               Escribenos
             </Link>
-            <Link href="#" target="_blank" className="bg-white border border-white inline-block text-[#556170] font-medium py-2 px-6 rounded-[32px] relative text-sm lg:text-base transition-colors duration-200 ease-in-out hover:bg-[#556170] hover:border-[#556170] hover:text-white">
+            <Link href="#" target="_blank" className="bg-white border border-white inline-block text-[#556170] font-medium py-2 px-6 rounded-[32px] relative text-sm lg:text-base transition-opacity duration-200 ease-in-out hover:opacity-70">
               <Wsp className="hidden md:inline-block absolute top-0 left-0 -translate-y-2 z-[9]"/>
               <WspSmall className="inline-block md:hidden absolute left-0 top-0"/>
               <span className="ml-4 md:ml-8 inline-block">Conversemos</span>
