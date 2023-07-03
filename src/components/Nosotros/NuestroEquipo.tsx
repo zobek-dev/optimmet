@@ -4,7 +4,7 @@ import { NuestroEquipo as NuestroImage, NuestroEquipoMobile, EquipoOptimmet } fr
 export const NuestroEquipo = () => {
   return(
     <section>
-      <div className="bg-white py-8 lg:py-12">
+      <div className="bg-white py-6 lg:py-12">
         <div className="wrapper">
           <h2 className="text-center font-bold mb-4 text-[20px] lg:text-[35px]">Conoce nuestro equipo</h2>
           <DiamodUnderlineGreen className="mx-auto mb-4"/>

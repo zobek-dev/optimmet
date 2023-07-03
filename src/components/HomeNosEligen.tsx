@@ -7,16 +7,16 @@ export const HomeNosEligen = () => {
       <div className="wrapper text-white">
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-x-8">
           <div>
-            <h2 className="text-center font-bold text-[30px] lg:text-[40px] leading-[1.2] mb-4">
-              ¿Por qué nos{" "}
-              <strong className="font-bold text-[#FC715E]">eligen</strong>?
+            <h2 className="lg:text-left text-center font-bold text-[30px] lg:text-[40px] leading-[1.2] mb-4">
+              ¿Por qué nos
+              {" "}<strong className="font-bold text-[#FC715E]">eligen</strong>?
             </h2>
-            <DiamondUnderline className="mx-auto" />
-            <p className="font-light text-[17px] lg:text-[20px] text-center my-8">
+            <DiamondUnderline className="mx-auto lg:mx-0" />
+            <p className="font-light text-[17px] lg:text-[20px] text-center lg:text-left mt-4 mb-8">
               Hemos trabajado en proyectos exitosos de diferentes areas.
             </p>
             <ul className="text-center grid grid-cols-3 gap-x-2 mx-auto justify-center items-center">
-              <li className="bg-white rounded-[10px] flex flex-col px-2 py-4">
+              <li className="bg-white rounded-[10px] flex flex-col px-2 py-8">
                 <span className="text-[#62cff4] font-semibold leading-none">
                   más de
                 </span>
@@ -28,7 +28,7 @@ export const HomeNosEligen = () => {
                   trayectoria
                 </span>
               </li>
-              <li className="bg-white rounded-[10px] flex flex-col px-2 py-4">
+              <li className="bg-white rounded-[10px] flex flex-col px-2 py-8">
                 <span className="text-[#62cff4] font-semibold leading-none">
                   más de
                 </span>
@@ -41,7 +41,7 @@ export const HomeNosEligen = () => {
                   realizados
                 </span>
               </li>
-              <li className="bg-white rounded-[10px] flex flex-col px-2 py-4">
+              <li className="bg-white rounded-[10px] flex flex-col px-2 py-8">
                 <span className="text-[#62cff4] font-semibold leading-none">
                   más de
                 </span>

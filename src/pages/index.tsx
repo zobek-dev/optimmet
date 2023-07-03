@@ -21,6 +21,10 @@ interface Post {
 export default function Home({ posts}: any) {
   return (
     <>
+      <Head>
+        <title>Optimmet - Optimiza tus procesos mineros</title>
+        <link rel="icon" href="favicon.png" type="image/png"/>
+      </Head>
       <Hero/>
       <HomeMarcas/>
       <HomeSobre/>
