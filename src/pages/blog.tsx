@@ -1,5 +1,5 @@
 import { BlogHeader, BlogMain } from "@/components/Blog";
-import axios from "axios";
+// import axios from "axios";
 
 const Blog = ({feed, posts, wp}:any) => {
   console.log(posts)
