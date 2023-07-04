@@ -44,6 +44,7 @@ import AsesoriasHeading from 'public/images/asesorias-heading.jpg'
 import AuditoriaSmall from 'public/images/auditoria-small.jpg'
 import Footer3 from 'public/images/footer-3.jpg'
 import EquipoOptimmet from 'public/images/equipo-optimmet.jpg'
+import ExperienciaIcon  from 'public/images/experiencia-icon.png'
 
 export {
   LogoFooter,
@@ -91,5 +92,6 @@ export {
   ConsultoriasCuadrada,
   DesarrolloProyectosCuadrada,
   AsesoriasHeading,
-  Footer3
+  Footer3,
+  ExperienciaIcon,
 }
