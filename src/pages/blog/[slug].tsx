@@ -170,7 +170,7 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const response = await axios.get<Post[]>(
-    `${process.env.WPBLOG_URI}wp-json/wp/v2/posts?fields=id,slug`
+    `${process.env.WPBLOG_URI}/wp-json/wp/v2/posts?fields=id,slug`
   );
   const posts = response.data;
   const paths = posts.map((post) => ({
