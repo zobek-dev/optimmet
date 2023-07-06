@@ -151,14 +151,14 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
   //console.log(context)
   const slug = context.params?.slug as string;
   const response = await axios.get<Post[]>(
-    `${process.env.WPBLOG_URI}wp-json/wp/v2/posts?slug=${slug}`
+    `${process.env.WPBLOG_URI}/wp-json/wp/v2/posts?slug=${slug}`
   );
   const [post] = response.data;
   const featuredimage = await axios.get<any>(
-    `${process.env.WPBLOG_URI}wp-json/wp/v2/media/${post.featured_media}`
+    `${process.env.WPBLOG_URI}/wp-json/wp/v2/media/${post.featured_media}`
   );
   const dataAuthor = await axios.get<any>(
-    `${process.env.WPBLOG_URI}wp-json/wp/v2/users/${post.author}`
+    `${process.env.WPBLOG_URI}/wp-json/wp/v2/users/${post.author}`
   );
   const image = featuredimage.data.source_url;
   const author = dataAuthor.data.name;
