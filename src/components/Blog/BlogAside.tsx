@@ -5,7 +5,7 @@ export const BlogAside = ({feed}: any) => {
       <div className="px-4 lg:px-8 ml-auto sm:max-w-[400px] w-full">
         <SearchBar/>
         <Categories/>
-        <InstagramFeed feed={feed}/>
+        {/* <InstagramFeed feed={feed}/> */}
       </div>
     </aside>
   )

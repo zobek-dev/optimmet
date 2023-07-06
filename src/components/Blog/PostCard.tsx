@@ -24,7 +24,7 @@ interface Props{
 
 export const PostCard = ({id, wp}: Props) => {
   const [post, setPost] = useState<Post | null>(null);
-  const url = 'https://mediahuella.com/blog-optimmet/wp-json/wp/v2/posts/' + id + '?_embed';
+  const url = wp + '/wp-json/wp/v2/posts/' + id + '?_embed';
 
   useEffect(() => {
     async function fetchPost(){
@@ -41,7 +41,7 @@ export const PostCard = ({id, wp}: Props) => {
   const imageUrl = post._embedded['wp:featuredmedia']?.[0]?.source_url;
   const title = post.title.rendered;
 
-  console.log(post)
+  //console.log(post)
   return(
     <li key={id}>
       <Link href={`/blog/${post.slug}`}>
