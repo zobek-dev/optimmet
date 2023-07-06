@@ -1,4 +1,6 @@
 import { MailLightblue, PhoneLightBlue } from "@/svg"
+import Cf7FormWrapper from "./Cf7FormWrapper"
+import { Form } from "./Form"
 
 export const ContactSection = () => {
   return(
@@ -21,18 +23,13 @@ export const ContactSection = () => {
             </div>
           </div>
           <div className="md:px-8 block">
-            <form action="" className="w-full block">
-              <input type="text" name="nombre" placeholder="Nombre" className="border border-[#62cff4] py-2 rounded-[20px] px-6 placeholder:italic placeholder:tracking-[1px] placeholder:text-[17px] placeholder:font-light focus:outline-[#62cff4] mb-4 w-full block"/>
-              <input type="email" name="email" placeholder="Email" className="border border-[#62cff4] py-2 rounded-[20px] px-6 placeholder:italic placeholder:tracking-[1px] placeholder:text-[17px] placeholder:font-light focus:outline-[#62cff4] mb-4 w-full block"/>
-              <input type="text" name="telefono" placeholder="Teléfono" className="border border-[#62cff4] py-2 rounded-[20px] px-6 placeholder:italic placeholder:tracking-[1px] placeholder:text-[17px] placeholder:font-light focus:outline-[#62cff4] mb-4 w-full block"/>
-              <input type="asunto" name="asunto" placeholder="Asunto" className="border border-[#62cff4] py-2 rounded-[20px] px-6 placeholder:italic placeholder:tracking-[1px] placeholder:text-[17px] placeholder:font-light focus:outline-[#62cff4] mb-4 w-full block"/>
-              <textarea name="mensaje" placeholder="Mensaje" id="" className="border border-[#62cff4] py-2 rounded-[20px] px-6 placeholder:italic placeholder:tracking-[1px] placeholder:text-[17px] placeholder:font-light focus:outline-[#62cff4] mb-4 w-full block" rows={5}></textarea>
-              <button type="submit" className="border border-[#C7E22B] rounded-[20px] px-8 py-2 w-max block transition-colors duration-200 ease-in-out hover:bg-[#c7e22b] hover:text-white"> Enviar</button>
-            </form>
+            <h2 className="text-[30px] lg:text-[35] font-bold leading-[1.4] my-6 text-center md:text-left">Escribenos</h2>
+            <Cf7FormWrapper siteUrl="https://www.optimmet.cl/headless-optimmet/" formId="6" url="">
+              <Form/>
+            </Cf7FormWrapper>  
           </div>
         </div> 
-      </div>
-      
+      </div>  
     </section>
   )
 }

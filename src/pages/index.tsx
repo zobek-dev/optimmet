@@ -32,20 +32,20 @@ export default function Home({ posts}: any) {
       <HomeNosEligen/>
       <HomeProyectos/>
       <HomeValores/>
-      {/* <HomeBlog posts={posts}/>  */}
+      <HomeBlog posts={posts}/>
     </>
   )
 }
 
-// export async function getStaticProps(){
-//   const url = `${process.env.WPBLOG_URI}wp-json/wp/v2/posts?per_page=3`
+export async function getStaticProps(){
+  const url = `https://www.optimmet.cl/headless-optimmet/wp-json/wp/v2/posts?per_page=3`
 
-//   const response = await axios<Post[]>(url);
-//   const posts = response.data;
+  const response = await axios<Post[]>(url);
+  const posts = response.data;
 
-//   return {
-//     props:{
-//       posts
-//     }
-//   }
-// }
+  return {
+    props:{
+      posts
+    }
+  }
+}
