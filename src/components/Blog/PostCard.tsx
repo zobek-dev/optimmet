@@ -19,12 +19,12 @@ interface Post {
 
 interface Props{
   id: number;
-  wp: string
 }
 
-export const PostCard = ({id, wp}: Props) => {
+export const PostCard = ({id}: Props) => {
+  // console.log(WP_URI)
   const [post, setPost] = useState<Post | null>(null);
-  const url = wp + '/wp-json/wp/v2/posts/' + id + '?_embed';
+  const url = 'https://optimmet.cl/headless-optimmet/wp-json/wp/v2/posts/' + id + '?_embed';
 
   useEffect(() => {
     async function fetchPost(){

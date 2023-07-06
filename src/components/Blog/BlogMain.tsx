@@ -1,11 +1,15 @@
 import { BlogAside, BlogGrid } from "."
 
-export const BlogMain = ({ posts, wp, feed }:any) => {
-  // console.log(wp)
+interface Props {
+  posts: any;
+}
+
+export const BlogMain = ({ posts}: Props) => {
+  //console.log(WP_URI)
   return(
     <section className="grid sm:grid-cols-6">
       <BlogAside />
-      <BlogGrid posts={posts} wp={wp}/>
+      <BlogGrid posts={posts} />
     </section>
   )
 }
