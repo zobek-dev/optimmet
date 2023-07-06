@@ -70,7 +70,6 @@ function Post({ post, image, author }: Props) {
         defer
       />
     <div className="bg-white">
-      <h1>Hello World</h1>
       <div className="wrapper">
         <div className="prose lg:prose-xl mx-auto py-28 lg:py-40">
           <img
