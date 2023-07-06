@@ -33,30 +33,30 @@ declare const IN: any;
 
 
 function Post({ post, image, author }: Props) {
-  // const published = moment(post.date).format("DD [de] MMMM [de] YYYY");
-  // const [host, setHost] = useState<string | null >(null);
+  const published = moment(post.date).format("DD [de] MMMM [de] YYYY");
+  const [host, setHost] = useState<string | null >(null);
 
-  // const router = useRouter();
+  const router = useRouter();
   
-  // useEffect(()=> {
-  //   if (typeof globalThis?.window !== undefined){
-  //     setHost(window.location.host);
-  //   }
+  useEffect(()=> {
+    if (typeof globalThis?.window !== undefined){
+      setHost(window.location.host);
+    }
 
-  //   if(typeof IN !== "undefined"){
-  //     IN.parse();
-  //   }
-  // },[])
+    if(typeof IN !== "undefined"){
+      IN.parse();
+    }
+  },[])
 
-  // const handleShareClick = () => {
-  //   window.open(
-  //     `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-  //       'https://' + host + router.asPath
-  //     )}`,
-  //     "popup",
-  //     "width=600,height=600"
-  //   );
-  // };
+  const handleShareClick = () => {
+    window.open(
+      `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+        'https://' + host + router.asPath
+      )}`,
+      "popup",
+      "width=600,height=600"
+    );
+  };
   
   return (
     <>
@@ -71,7 +71,7 @@ function Post({ post, image, author }: Props) {
       />
     <div className="bg-white">
       <h1>Hello World</h1>
-      {/* <div className="wrapper">
+      <div className="wrapper">
         <div className="prose lg:prose-xl mx-auto py-28 lg:py-40">
           <img
             src={image}
@@ -138,7 +138,7 @@ function Post({ post, image, author }: Props) {
           
           <hr className="border-b border-[#62CFF4]"  style={{ marginTop: '0', marginBottom: '0'}}/>
         </div>
-      </div> */}
+      </div>
     </div>
     </>
     
@@ -147,34 +147,34 @@ function Post({ post, image, author }: Props) {
 
 export default Post;
 
-// export const getStaticProps: GetStaticProps<Props> = async (context) => {
-//   console.log(context)
-//   const slug = context.params?.slug as string;
-//   const response = await axios.get<Post[]>(
-//     `${process.env.WPBLOG_URI}wp-json/wp/v2/posts?slug=${slug}`
-//   );
-//   const [post] = response.data;
-//   const featuredimage = await axios.get<any>(
-//     `${process.env.WPBLOG_URI}wp-json/wp/v2/media/${post.featured_media}`
-//   );
-//   const dataAuthor = await axios.get<any>(
-//     `${process.env.WPBLOG_URI}wp-json/wp/v2/users/${post.author}`
-//   );
-//   const image = featuredimage.data.source_url;
-//   const author = dataAuthor.data.name;
+export const getStaticProps: GetStaticProps<Props> = async (context) => {
+  //console.log(context)
+  const slug = context.params?.slug as string;
+  const response = await axios.get<Post[]>(
+    `${process.env.WPBLOG_URI}wp-json/wp/v2/posts?slug=${slug}`
+  );
+  const [post] = response.data;
+  const featuredimage = await axios.get<any>(
+    `${process.env.WPBLOG_URI}wp-json/wp/v2/media/${post.featured_media}`
+  );
+  const dataAuthor = await axios.get<any>(
+    `${process.env.WPBLOG_URI}wp-json/wp/v2/users/${post.author}`
+  );
+  const image = featuredimage.data.source_url;
+  const author = dataAuthor.data.name;
 
-//   return {
-//     props: { post, image, author },
-//   };
-// };
+  return {
+    props: { post, image, author },
+  };
+};
 
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   const response = await axios.get<Post[]>(
-//     `${process.env.WPBLOG_URI}wp-json/wp/v2/posts?fields=id,slug`
-//   );
-//   const posts = response.data;
-//   const paths = posts.map((post) => ({
-//     params: { slug: post.slug },
-//   }));
-//   return { paths, fallback: false };
-// };
+export const getStaticPaths: GetStaticPaths = async () => {
+  const response = await axios.get<Post[]>(
+    `${process.env.WPBLOG_URI}wp-json/wp/v2/posts?fields=id,slug`
+  );
+  const posts = response.data;
+  const paths = posts.map((post) => ({
+    params: { slug: post.slug },
+  }));
+  return { paths, fallback: false };
+};
