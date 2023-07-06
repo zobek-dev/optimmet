@@ -19,11 +19,12 @@ interface Post {
 
 interface Props{
   id: number;
+  uri: string;
 }
 
-export const PostCard = ({id}: Props) => {
+export const PostCard = ({id, uri}: Props) => {
   const [post, setPost] = useState<Post | null>(null);
-  const url = 'https://mediahuella.com/blog-optimmet/wp-json/wp/v2/posts/' + id + '?_embed';
+  const url = uri + '/wp-json/wp/v2/posts/' + id + '?_embed';
 
   useEffect(() => {
     async function fetchPost(){

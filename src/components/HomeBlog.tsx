@@ -18,9 +18,10 @@ interface Post {
 
 interface Props{
   posts: Post[];
+  uri: string;
 }
 
-export const HomeBlog = ({posts}: Props) => {
+export const HomeBlog = ({posts, uri}: Props) => {
   return(
     <section className="py-12 lg:py-24">
       <div className="wrapper">
@@ -29,7 +30,7 @@ export const HomeBlog = ({posts}: Props) => {
         <DiamondUnderline className="mx-auto mb-8"/>
         <ul tabIndex={-1} className="grid md:grid-cols-3 gap-8 md:gap-4 justify-items-center">
           {posts && posts.map((post,index)=> (
-              <PostCard key={index} id={post.id}/>
+              <PostCard key={index} id={post.id} uri={uri}/>
             ))
           }
         </ul>
