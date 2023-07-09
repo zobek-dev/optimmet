@@ -32,7 +32,7 @@ interface Props {
 declare const IN: any;
 
 
-function Post({ post, image, author }: Props) {
+function Post({ post, image, author }: any) {
   const published = moment(post.date).format("DD [de] MMMM [de] YYYY");
   const [host, setHost] = useState<string | null >(null);
 
