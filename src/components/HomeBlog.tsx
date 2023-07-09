@@ -1,5 +1,9 @@
 import { DiamondUnderline } from "@/svg"
 import { PostCard } from "./PostCard";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+import {WPBLOG_URI, POSTS_URL} from '@/constants';
 
 interface Post {
   id: number;
@@ -15,13 +19,22 @@ interface Post {
   slug: string;
 }
 
-
 interface Props{
-  posts: Post[];
-  uri: string;
+  WPBLOG_URI: string | undefined
+  POSTS_URL: string
 }
 
-export const HomeBlog = ({posts, uri}: Props) => {
+export const HomeBlog = () => {
+  const url = `${WPBLOG_URI}${POSTS_URL}?_embed&per_page=3`;
+  const [posts, setPosts] = useState<Post[] | null>(null);
+
+  useEffect(()=>{
+    async function getPosts(){
+      const response = await axios.get<Post[]>(url);
+      setPosts(response.data);
+    }
+    getPosts();
+  },[])
   return(
     <section className="py-12 lg:py-24">
       <div className="wrapper">
@@ -30,7 +43,7 @@ export const HomeBlog = ({posts, uri}: Props) => {
         <DiamondUnderline className="mx-auto mb-8"/>
         <ul tabIndex={-1} className="grid md:grid-cols-3 gap-8 md:gap-4 justify-items-center">
           {posts && posts.map((post,index)=> (
-              <PostCard key={index} id={post.id} uri={uri}/>
+              <PostCard key={index} id={post.id}/>
             ))
           }
         </ul>

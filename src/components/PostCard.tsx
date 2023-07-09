@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { WPBLOG_URI, POSTS_URL } from "@/constants";
 import Link from "next/link";
 import moment from "moment";
 
@@ -19,12 +20,12 @@ interface Post {
 
 interface Props{
   id: number;
-  uri: string;
 }
 
-export const PostCard = ({id, uri}: Props) => {
+export const PostCard = ({id}: Props) => {
   const [post, setPost] = useState<Post | null>(null);
-  const url = uri + '/wp-json/wp/v2/posts/' + id + '?_embed';
+  console.log(WPBLOG_URI)
+  const url = `${WPBLOG_URI}${POSTS_URL}/${id}?_embed`;
 
   useEffect(() => {
     async function fetchPost(){

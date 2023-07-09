@@ -1,15 +1,18 @@
-import { BlogAside, BlogGrid } from "."
+import { BlogAside, BlogGrid } from ".";
+import {useState} from "react";
 
 interface Props {
-  posts: any;
+  total: number
 }
 
-export const BlogMain = ({ posts}: Props) => {
+export const BlogMain = ({ total}: Props) => {
+
+  const [page, setPage] = useState(1);
   //console.log(WP_URI)
   return(
     <section className="grid sm:grid-cols-6">
       <BlogAside />
-      <BlogGrid posts={posts} />
+      <BlogGrid total={total} page={page} setPage={setPage}/>
     </section>
   )
 }

@@ -6,7 +6,7 @@ import { InstagramFeed } from "./InstagramFeed";
 import { Categories } from "./Categories";
 import { SearchBar } from "./SearchBar";
 import { PostCard } from "./PostCard";
-
+import { Pagination } from "./Pagination"
 export { 
   BlogHeader,
   BlogMain,
@@ -15,5 +15,6 @@ export {
   InstagramFeed, 
   Categories,
   SearchBar,
-  PostCard
+  PostCard,
+  Pagination
 }
