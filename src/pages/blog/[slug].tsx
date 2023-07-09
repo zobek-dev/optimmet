@@ -164,6 +164,7 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
 
   return {
     props: { post, image, author },
+    revalidate:1
   };
 };
 
