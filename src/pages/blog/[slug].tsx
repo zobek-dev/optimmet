@@ -72,12 +72,17 @@ function Post({ post, image, author }: Props) {
     <div className="bg-white">
       <div className="wrapper">
         <div className="prose lg:prose-xl mx-auto py-28 lg:py-40">
-          <img
-            src={image}
-            alt={post.title.rendered}
-            className="mx-auto rounded-2xl"
-            loading="lazy"
-          />
+          {
+            image && (
+              <img
+                src={image}
+                alt={post.title.rendered}
+                className="mx-auto rounded-2xl"
+                loading="lazy"
+              />
+            )
+          }
+          
           <h1
             className="text-[#556170] font-bold text-[35px] line-height-[1.2] pb-4 lg:pb-8 border-b border-[#62CFF4]"
             style={{ marginBottom: "0" }}
