@@ -15,7 +15,7 @@ export const Pagination = ({total, page, setPage}: Props) => {
   // }
   return (
     <>
-      {page && page > 0 ? (
+      {total && total > 1 ? (
         <nav className="my-20">
           <ul className="flex w-max gap-x-4 mx-auto">
             <li>
@@ -23,17 +23,11 @@ export const Pagination = ({total, page, setPage}: Props) => {
                 prev
               </button>
             </li>
-               
-            {page && page < total ? (
-                <li>
-                  <button onClick={() => setPage(page + 1)} disabled={page < total ? false : true}>
-                    next
-                  </button>
-                </li>
-              ): (
-                ''
-              )
-            }
+            <li>
+              <button onClick={() => setPage(page + 1)} disabled={page < total ? false : true}>
+                next
+              </button>
+            </li>
           </ul>
         </nav>
       ):(
