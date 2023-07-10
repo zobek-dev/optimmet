@@ -52,7 +52,7 @@ export const PostCard = ({id}: Props) => {
     <li key={id}>
       <Link href={`/blog/${post.slug}`}>
         <div className="relative max-w-[300px] -mb-20 flex flex-col items-center">
-          <Image src={image} placeholder="blur" blurDataURL="placeholder.png" width={300} height={300} loading="lazy" alt={title} className="aspect-[4/3] object-cover object-center rounded-xl" />
+          <img src={image} width={300} height={300} loading="lazy" alt={title} className="aspect-[4/3] object-cover object-center rounded-xl" />
           <div className="bg-white mx-4 -translate-y-20 p-4 rounded-tl-xl rounded-br-xl border border-[#62CFF4]">
             <h3 className="text-[#62CFF4] font-bold text-[25px] leading-[1.2] mb-4 line-clamp-3">
               {post.title.rendered}
