@@ -16,14 +16,17 @@ export const SearchBar = ({setPosts}:any) => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Búscar en el blog"
-        />
-        <button>
-          Buscar
-        </button>
+        <div>
+          <input
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            placeholder="Búscar en el blog"
+            className="outline-none"
+          />
+          <button>
+            Buscar
+          </button>
+        </div>
       </form>
     </div>
   );

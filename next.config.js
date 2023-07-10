@@ -4,6 +4,16 @@ const nextConfig = {
   // output: 'export',
   // distDir: 'dist',
   // trailingSlash: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.optimmet.cl',
+        port: '',
+        pathname: '/headless-optimmet/**',
+      },
+    ],
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
