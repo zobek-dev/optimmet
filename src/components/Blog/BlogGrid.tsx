@@ -6,19 +6,11 @@ interface Props{
   total: number;
   page: number;
   setPage: Dispatch<SetStateAction<number>>
+  posts: any
 }
 
-export const BlogGrid = ({ total, page, setPage}: Props) => {
-  const [posts, setPosts] = useState<any[] | null>(null);
-   
-  useEffect( () => {
-    async function fetchPosts(){
-      const response = await axios.get(`https://optimmet.cl/headless-optimmet/wp-json/wp/v2/posts?_embed&per_page=12&page=${page}`);
-      setPosts(response.data);
-    }
-    fetchPosts();
-  },[page])
-
+export const BlogGrid = ({ total, page, setPage, posts}: Props) => {
+  
   return(
     <div className="py-12 lg:py-20 sm:col-span-4"> 
       <div className="max-w-[950px] mr-auto px-4">
@@ -27,7 +19,7 @@ export const BlogGrid = ({ total, page, setPage}: Props) => {
             <PostCard id={post.id} key={post.id}/>
           ))}
         </ul>
-        <Pagination page={page} setPage={setPage} total={total}/>
+        <Pagination page={page} setPage={setPage} total={total} />
       </div>
     </div>
   )
