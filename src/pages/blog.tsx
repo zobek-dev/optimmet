@@ -12,7 +12,7 @@ const Blog = ({totalPages} : Props) => {
   return(
     <>
       <BlogHeader/>
-      <BlogMain total={totalPages}/>
+      <BlogMain totalPages={totalPages}/>
     </>
   )
 }

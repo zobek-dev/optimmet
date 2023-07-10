@@ -3,12 +3,13 @@ import {useState, useEffect} from "react";
 import axios from "axios"
 
 interface Props {
-  total: number
+  totalPages: number
 }
 
-export const BlogMain = ({ total}: Props) => {
+export const BlogMain = ({ totalPages }: Props) => {
   const [posts, setPosts] = useState<any[] | null>(null);
   const [page, setPage] = useState(1);
+  const [total, setTotal] = useState(totalPages);
    
   useEffect( () => {
     async function fetchPosts(){
