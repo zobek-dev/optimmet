@@ -5,8 +5,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Facebook, Linkedin } from "@/images";
 import { useRouter } from "next/router";
+import { WPBLOG_URI, POSTS_URL } from "@/constants"
 import Head from "next/head";
 import Script from "next/script"
+import { Seo } from "@/components";
 
 interface Post {
   id: number;
@@ -60,9 +62,7 @@ function Post({ post, image, author }: any) {
   
   return (
     <>
-    <Head>
-      
-    </Head>
+    <Seo title={post.title.rendered} description={post.excerpt}/>
     <Script
         type="text/javascript"
         src="//platform.linkedin.com/in.js"
@@ -154,14 +154,14 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
   //console.log(context)
   const slug = context.params?.slug as string;
   const response = await axios.get<Post[]>(
-    `${process.env.WPBLOG_URI}/wp-json/wp/v2/posts?slug=${slug}`
+    `${WPBLOG_URI}/wp-json/wp/v2/posts?slug=${slug}`
   );
   const [post] = response.data;
   const featuredimage = await axios.get<any>(
-    `${process.env.WPBLOG_URI}/wp-json/wp/v2/media/${post.featured_media}`
+    `${WPBLOG_URI}/wp-json/wp/v2/media/${post.featured_media}`
   );
   const dataAuthor = await axios.get<any>(
-    `${process.env.WPBLOG_URI}/wp-json/wp/v2/users/${post.author}`
+    `${WPBLOG_URI}/wp-json/wp/v2/users/${post.author}`
   );
   const image = featuredimage.data.source_url;
   const author = dataAuthor.data.name;
@@ -174,7 +174,7 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const response = await axios.get<Post[]>(
-    `${process.env.WPBLOG_URI}/wp-json/wp/v2/posts?fields=id,slug&per_page=30`
+    `${WPBLOG_URI}/wp-json/wp/v2/posts?fields=id,slug&per_page=30`
   );
   const posts = response.data;
   const paths = posts.map((post) => ({

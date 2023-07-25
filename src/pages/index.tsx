@@ -1,16 +1,23 @@
-import Head from 'next/head'
-
-import { Hero, HomeMarcas, HomeServices, HomeSobre, HomeNosEligen, HomeProyectos, HomeValores, HomeBlog } from '@/components';
-
+import {
+  Hero,
+  HomeMarcas,
+  HomeServices,
+  HomeSobre,
+  HomeNosEligen,
+  HomeProyectos,
+  HomeValores,
+  HomeBlog,
+  Seo
+} from "@/components";
 
 interface Post {
   id: number;
   title: { rendered: string };
   content: { rendered: string };
-  excerpt: { rendered: string};
+  excerpt: { rendered: string };
   date: string;
   _embedded: {
-    'wp:featuredmedia'?: {
+    "wp:featuredmedia"?: {
       source_url: string;
     }[];
   };
@@ -20,18 +27,15 @@ interface Post {
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Optimmet - Optimiza tus procesos mineros</title>
-        <link rel="icon" href="favicon.png" type="image/png"/>
-      </Head>
-      <Hero/>
-      <HomeMarcas/>
-      <HomeSobre/>
-      <HomeServices/>       
-      <HomeNosEligen/>
-      <HomeProyectos/>
-      <HomeValores/>
-      <HomeBlog/>
+      <Seo title="Optimizamos tus procesos" description=""/>
+      <Hero />
+      <HomeMarcas />
+      <HomeSobre />
+      <HomeServices />
+      <HomeNosEligen />
+      <HomeProyectos />
+      <HomeValores />
+      <HomeBlog />
     </>
-  )
+  );
 }

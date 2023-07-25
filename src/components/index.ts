@@ -15,6 +15,7 @@ import { CallToAction } from './CallToAction'
 import { MobileNav } from './MobileNav'
 import { SwiperNextBtn } from './SwiperNextBtn'
 import { SwiperPrevBtn } from './SwiperPrevBtn'
+import { Seo } from './Seo'
 
 export { 
   Header, 
@@ -33,5 +34,6 @@ export {
   CallToAction,
   MobileNav,
   SwiperPrevBtn,
-  SwiperNextBtn
+  SwiperNextBtn, 
+  Seo
 }

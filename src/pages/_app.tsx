@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-     <style jsx global>{`
+      <style jsx global>{`
         html {
           font-family: ${montserrat.style.fontFamily};
         }

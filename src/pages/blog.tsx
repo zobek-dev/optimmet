@@ -1,5 +1,6 @@
 import axios from "axios";
 import { BlogHeader, BlogMain } from "@/components/Blog";
+import { Seo } from "@/components";
 import { WPBLOG_URI, POSTS_URL } from "@/constants";
 
 
@@ -11,6 +12,7 @@ const Blog = ({totalPages} : Props) => {
   // console.log(WP_URI)
   return(
     <>
+      <Seo title="Blog" description=""/>
       <BlogHeader/>
       <BlogMain totalPages={totalPages}/>
     </>

@@ -24,7 +24,7 @@ interface Props{
 
 export const PostCard = ({id}: Props) => {
   const [post, setPost] = useState<Post | null>(null);
-  console.log(WPBLOG_URI)
+  // console.log(WPBLOG_URI)
   const url = `${WPBLOG_URI}${POSTS_URL}/${id}?_embed`;
 
   useEffect(() => {
