@@ -35,7 +35,7 @@ export default function Home() {
       <HomeNosEligen />
       <HomeProyectos />
       <HomeValores />
-      <HomeBlog />
+      {/* <HomeBlog /> */}
     </>
   );
 }

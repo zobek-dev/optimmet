@@ -115,15 +115,15 @@ export const Footer = () => {
             </h4>
             <ul>
               <li className="mb-2">
-                <Link href="tel:+56983315589" className="inline-flex gap-4 items-center hover:underline hover:underline-offset-2">
+                <Link href="tel:+56977465561" className="inline-flex gap-4 items-center hover:underline hover:underline-offset-2">
                   <span><Phone/></span>
-                  <span className="text-[15px] font-light">+56 9 8331 5589</span>
+                  <span className="text-[15px] font-light">+569 7746 5561</span>
                 </Link>
               </li>
               <li className="mb-2">
-                <Link href="mailto:contacto@cellmed.cl" className="inline-flex gap-4 items-center hover:underline hover:underline-offset-2">
+                <Link href="mailto:info@optimmet.cl" className="inline-flex gap-4 items-center hover:underline hover:underline-offset-2">
                   <span><Mail/></span>
-                  <span className="text-[15px] font-light">contacto@cellmed.cl</span>
+                  <span className="text-[15px] font-light">info@optimmet.cl</span>
                 </Link>
               </li>
               <li className="mb-2">

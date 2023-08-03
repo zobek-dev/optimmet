@@ -12,13 +12,13 @@ export const ContactSection = () => {
             <h2 className="text-[30px] lg:text-[35] font-bold leading-[1.4] mb-4">¿Buscas optimizar los procesos <strong className="font-bold text-[#62cff4]">de tu organización?</strong></h2>
             <p className="text-[17px] mb-4">No malgastes energía innecesariamente y confía en nuestros equipos para afrontar los nuevos desafíos de tu organización.</p>
             <div className="border-t border-t-[#62cff4] py-4 flex flex-col lg:flex-row gap-2">
-              <a href="tel:+56983315598" className="border border-[#62cff4] py-2 px-4 flex items-center justify-center rounded-[20px] gap-2">
+              <a href="tel:+56977465561" className="border border-[#62cff4] py-2 px-4 flex items-center justify-center rounded-[20px] gap-2">
                 <span><PhoneLightBlue/></span>
-                <span className="text-sm tracking-[1px]">+56 9 8331 5598</span>
+                <span className="text-sm tracking-[1px]">+569 7746 5561</span>
               </a>
-              <a href="mailto:contacto@cellmed.cl" className="border border-[#62cff4] py-2 px-4 flex items-center justify-center rounded-[20px] gap-2">
+              <a href="mailto:info@optimmet.cl" className="border border-[#62cff4] py-2 px-4 flex items-center justify-center rounded-[20px] gap-2">
                 <span><MailLightblue/></span>
-                <span className="text-sm tracking-[1px]">contacto@cellmed.cl</span>
+                <span className="text-sm tracking-[1px]">info@optimmet.cl</span>
               </a>
             </div>
           </div>
