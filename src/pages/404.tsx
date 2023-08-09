@@ -3,6 +3,11 @@ import { DiamondBig } from "@/svg";
 import Link from "next/link";
 import { Seo } from "@/components";
 
+const seo = {
+  title: "404 not found",
+  description: "Página no encontrado, por favor vuelve o ingresa a una ruta válida."
+} 
+
 const Custom404 = () => {
   return (
     <>

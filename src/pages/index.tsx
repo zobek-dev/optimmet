@@ -24,10 +24,15 @@ interface Post {
   slug: string;
 }
 
+const seo = {
+  title: "Optimiza tus procesos y la gestión de recursos",
+  description: "Maximiza la eficiencia de tus proyectos con Optimmet. Mejora la productividad y gestiona de manera efectiva los recursos"
+}
+
 export default function Home() {
   return (
     <>
-      <Seo title="Optimizamos tus procesos" description=""/>
+      <Seo title={seo?.title} description={seo?.description}/>
       <Hero />
       <HomeMarcas />
       <HomeSobre />
@@ -35,7 +40,7 @@ export default function Home() {
       <HomeNosEligen />
       <HomeProyectos />
       <HomeValores />
-      {/* <HomeBlog /> */}
+      <HomeBlog />
     </>
   );
 }
