@@ -44,15 +44,15 @@ export const MobileNav = ({open, setOpen}:Iprops) => {
                 </Link>
               </li>
               <li className="border-b border-[#62CFF4]" onClick={()=>setOpen(false)}>
-                <Link href="/faqs" className="text-[17px] font-light block py-3">
+                <Link href="/preguntas-frecuentes" className="text-[17px] font-light block py-3">
                   Faqs
                 </Link>
               </li>
-              <li className="border-b border-[#62CFF4]" onClick={()=>setOpen(false)}>
+              {/* <li className="border-b border-[#62CFF4]" onClick={()=>setOpen(false)}>
                 <Link href="/blog" className="text-[17px] font-light block py-3">
                   Blog
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/contacto" className="bg-[#C7E22B] block w-max px-4 py-2 my-4 rounded-[32px] text-[#08376B] text-[17px] font-medium" onClick={()=>setOpen(false)}>
                   Contáctanos

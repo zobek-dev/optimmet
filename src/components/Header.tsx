@@ -8,7 +8,7 @@ import { MobileNav } from "@/components/MobileNav";
 export const Header = () => {
   const [scrollTop, setScrollTop] = useState<number>(0);
   const [open, setOpen] = useState<boolean>(false);
-  const pathList = ["/404", "/faqs"];
+  const pathList = ["/404", "/preguntas-frecuentes"];
   const router = useRouter();
 
   useEffect(() => {
@@ -128,7 +128,7 @@ export const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/faqs"
+                      href="/preguntas-frecuentes"
                       className={`${
                         (!pathList.includes(router.pathname) ||
                           scrollTop > 50) &&
@@ -136,7 +136,7 @@ export const Header = () => {
                           ? "text-white"
                           : ""
                       } text-[15px] ${
-                        router.pathname == "/faqs" ? "font-bold" : "font-light"
+                        router.pathname == "/preguntas-frecuentes" ? "font-bold" : "font-light"
                       } transition-opacity ease-linear duration-200 hover:opacity-70`}
                     >
                       Faqs
