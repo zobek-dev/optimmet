@@ -31,7 +31,7 @@ export const ModalProyecto = ({ image, title, content, company, type, openModal,
             <div className="md:col-span-1">
               <img 
                 src={image.src} 
-                className="object-center object-fit aspect-square" 
+                className="object-center object-cover aspect-square rounded-2xl w-[140px] h-auto" 
                 width={image.width} 
                 height={image.height} 
                 alt={title} 

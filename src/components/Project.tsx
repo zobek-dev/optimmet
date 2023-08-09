@@ -27,6 +27,7 @@ export const Project = ({ project }: Proyecto) => {
           width={image_card.width}
           height={image_card.height}
           loading="lazy"
+          className="w-[232px] h-auto object-cover aspect-square object-center rounded-2xl"
         />
         <div className="bg-white py-6 px-6 rounded-tl-[10px] rounded-br-[10px] border border-[#62cff4] w-[90%] translate-x-8 -translate-y-24 relative group-hover:bg-[#62cff4] transition-colors ease-in-out duration-200 min-w-[256px]">
           <h3 className="line-clamp-3 text-[17px] font-medium mb-4 group-hover:text-white transition-colors ease-in-out duration-200 min-h-[80px]">{project.title}</h3>
