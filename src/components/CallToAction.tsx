@@ -20,7 +20,7 @@ export const CallToAction = () => {
               Escribenos
             </Link>
             {/* falta link de wsp */}
-            <Link href="#" target="_blank" className="bg-white inline-block text-[#556170] font-medium py-2 px-6 rounded-[32px] relative text-sm lg:text-base border border-[#556170] text-center transition-opacity ease-in-out duration-200 hover:opacity-70">
+            <Link href="https://api.whatsapp.com/send?phone=56977465561" target="_blank" className="bg-white inline-block text-[#556170] font-medium py-2 px-6 rounded-[32px] relative text-sm lg:text-base border border-[#556170] text-center transition-opacity ease-in-out duration-200 hover:opacity-70">
               <Wsp className="hidden md:inline-block absolute top-0 -left-1 -translate-y-2"/>
               <WspSmall className="inline-block md:hidden absolute -left-1 top-0"/>
               <span className="ml-4 md:ml-8 inline-block">Conversemos</span>

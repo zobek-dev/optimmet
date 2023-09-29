@@ -29,7 +29,7 @@ export const ServiceCard = ({ service, index }: Iprop) => {
           />
           <div className={`relative sm:translate-x-0 -translate-y-20 -mb-20 gap-4 sm:gap-0 sm:mb-0 sm:translate-y-0 sm:absolute self-end sm:self-auto bg-white w-[85%] flex flex-col lg:flex-row sm:items-end py-4 px-4 rounded-[10px] rounded-bl-none border border-[#62CFF4] group-hover:bg-[#62CFF4] transition-colors  duration-200 ease-in-out ${index % 2 !=0 ? 'sm:left-0' : 'sm:right-0'}`}>
             <div>
-              <h3 className="font-bold text-[#62CFF4] text-[23px] leading-[1.4] mb-2 group-hover:text-white transition-colors duration-200 ease-in-out">{title}</h3>
+              <h3 className="font-bold text-[#62CFF4] text-[23px] leading-[1.4] mb-2 group-hover:text-white transition-colors duration-200 ease-in-out line-clamp-3">{title}</h3>
               <p className="font-light text-[15px] text-[#556170] leading-[1.4] group-hover:text-white transition-colors duration-200 ease-in-out">{excerpt}</p>
             </div>
             <span className="relative self-end">

@@ -30,7 +30,7 @@ export const OtrosCard = ({ service, index }: Iprop) => {
           <div className={`relative bg-white w-[250px] flex flex-col 
            py-4 px-4 rounded-[10px] rounded-bl-none border border-[#62CFF4] group-hover:bg-[#62CFF4] transition-colors duration-200 ease-in-out translate-x-8 -translate-y-20`}>
             <div>
-              <h3 className="font-bold text-[#62CFF4] text-[23px] leading-[1.4] mb-2 group-hover:text-white transition-colors duration-200 ease-in-out">{title}</h3>
+              <h3 className="font-bold text-[#62CFF4] text-[23px] leading-[1.4] mb-2 group-hover:text-white transition-colors duration-200 ease-in-out line-clamp-3">{title}</h3>
               <p className="font-light text-[15px] text-[#556170] leading-[1.4] group-hover:text-white transition-colors duration-200 ease-in-out">{excerpt}</p>
             </div>
             <span className="relative self-end">

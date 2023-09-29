@@ -62,8 +62,8 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/faqs" className="text-[15px] leading-[1.5] mb-4 inline-block font-light hover:underline hover:underline-offset-2"> 
-                  FAQS
+                <Link href="/preguntas-frecuentes" className="text-[15px] leading-[1.5] mb-4 inline-block font-light hover:underline hover:underline-offset-2"> 
+                  Faqs
                 </Link>
               </li>
               <li>
@@ -96,7 +96,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li className="mb-2 block leading-none">
-                <Link href="/servicios/proyectos" className="inline-flex gap-x-2 items-start hover:underline hover:underline-offset-2">
+                <Link href="/servicios/desarrollo-proyectos" className="inline-flex gap-x-2 items-start hover:underline hover:underline-offset-2">
                   <span><Diamond/></span>
                   <span className="text-[15px] font-light leading-[1.2]">Desarrollo de Proyectos de Sustentabilidad</span>
                 </Link>
