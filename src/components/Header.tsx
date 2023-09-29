@@ -142,7 +142,7 @@ export const Header = () => {
                       Faqs
                     </Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <Link
                       href="/blog"
                       className={`${
@@ -157,7 +157,7 @@ export const Header = () => {
                     >
                       Blog
                     </Link>
-                  </li> */}
+                  </li>
                   <li>
                     <Link
                       href="/contacto"
