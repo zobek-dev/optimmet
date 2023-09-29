@@ -19,7 +19,6 @@ export const BlogMain = ({ totalPages }: Props) => {
     fetchPosts();
   },[page])
 
-  //console.log(WP_URI)
   return(
     <section className="grid sm:grid-cols-6">
       <BlogAside posts={posts} setPosts={setPosts}/>

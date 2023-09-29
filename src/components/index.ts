@@ -17,6 +17,8 @@ import { SwiperNextBtn } from './SwiperNextBtn'
 import { SwiperPrevBtn } from './SwiperPrevBtn'
 import { Seo } from './Seo'
 
+export * from "./Placeholder";
+
 export { 
   Header, 
   Footer, 

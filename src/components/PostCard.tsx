@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { WPBLOG_URI, POSTS_URL } from "@/constants";
 import Link from "next/link";
 import moment from "moment";
+import { Placeholder } from ".";
 
 interface Post {
   id: number;
@@ -24,6 +25,7 @@ interface Props{
 
 export const PostCard = ({id}: Props) => {
   const [post, setPost] = useState<Post | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
   // console.log(WPBLOG_URI)
   const url = `${WPBLOG_URI}${POSTS_URL}/${id}?_embed`;
 
@@ -36,7 +38,7 @@ export const PostCard = ({id}: Props) => {
   },[id]);
 
   if(!post) {
-    return <li>Cargando...</li>
+    return <Placeholder/>
   }
 
   const imageUrl = post._embedded['wp:featuredmedia']?.[0]?.source_url;
