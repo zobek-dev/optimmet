@@ -32,7 +32,7 @@ interface Props{
 }
 
 const Cf7FormWrapper = ({ children, siteUrl, formId, url }:Props) => {
-  const [isSent, setSent] = useState(false)
+  const [isSent, setSent] = useState(null)
   const [isLoading, setLoading] = useState(false)
   const [hasError, setError] = useState(null)
 
@@ -53,7 +53,7 @@ const Cf7FormWrapper = ({ children, siteUrl, formId, url }:Props) => {
       .then((resp) => resp.json())
       .then((resp) => {
         if (resp.status !== "mail_sent") throw resp.message
-        setSent(true)
+        setSent(resp.message)
       })
       .catch((error) => {
         setError(error)
