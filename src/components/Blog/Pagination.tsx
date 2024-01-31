@@ -1,13 +1,13 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from 'react'
 
 interface Props {
-  total: number;
-  page: number;
-  setPage: Dispatch<SetStateAction<number>>;
+  total: number
+  page: number
+  setPage: Dispatch<SetStateAction<number>>
 }
 export const Pagination = ({ total, page, setPage }: Props) => {
   //loading
-  const list = Array.from({ length: total }, (_, index) => index + 1);
+  const list = Array.from({ length: total }, (_, index) => index + 1)
 
   return (
     <>
@@ -20,8 +20,8 @@ export const Pagination = ({ total, page, setPage }: Props) => {
                 disabled={page <= 1 ? true : false}
                 className={`px-2 py-2 ${
                   page <= 1
-                    ? "border border-gray-500"
-                    : "border border-[#62CFF4]"
+                    ? 'border border-gray-500'
+                    : 'border border-[#62CFF4]'
                 }`}
               >
                 <svg
@@ -33,9 +33,9 @@ export const Pagination = ({ total, page, setPage }: Props) => {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"
                   />
                 </svg>
@@ -50,8 +50,8 @@ export const Pagination = ({ total, page, setPage }: Props) => {
                     onClick={() => setPage(num)}
                     className={`px-2.5 py-1.5 leading-[1.1] text-sm ${
                       page != num
-                        ? "border border-gray-500"
-                        : "border border-[#62CFF4]"
+                        ? 'border border-gray-500'
+                        : 'border border-[#62CFF4]'
                     }`}
                   >
                     {num}
@@ -64,8 +64,8 @@ export const Pagination = ({ total, page, setPage }: Props) => {
                 disabled={page < total ? false : true}
                 className={` px-2 py-2 ${
                   page < total
-                    ? "border border-[#62CFF4]"
-                    : "border border-gray-500"
+                    ? 'border border-[#62CFF4]'
+                    : 'border border-gray-500'
                 }`}
               >
                 <svg
@@ -77,9 +77,9 @@ export const Pagination = ({ total, page, setPage }: Props) => {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                   />
                 </svg>
@@ -89,8 +89,8 @@ export const Pagination = ({ total, page, setPage }: Props) => {
           </ul>
         </nav>
       ) : (
-        ""
+        ''
       )}
     </>
-  );
-};
+  )
+}

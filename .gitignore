@@ -38,3 +38,7 @@ next-env.d.ts
 #zip files
 out.zip
 
+#packege log
+package-lock.json
+yarn.lock
+

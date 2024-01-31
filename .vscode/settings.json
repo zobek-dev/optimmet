@@ -3,5 +3,14 @@
   "editor.tabSize": 2,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
+  },
+  "editor.formatOnSave": false,
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
