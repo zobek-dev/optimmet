@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
 export const Placeholder = () => {
   return (
-    <li className="relative h-[392px] max-w-[300px] flex flex-col items-center bg-gray-200 rounded-2xl">
+    <li className="relative h-[392px] w-full md:max-w-[300px] flex flex-col items-center bg-gray-200 rounded-2xl">
       <div
         role="status"
         className="absolute -translate-x-1/2 -translate-y-1/2 top-2/4 left-1/2"
@@ -26,5 +26,5 @@ export const Placeholder = () => {
         <span className="sr-only">Loading...</span>
       </div>
     </li>
-  );
-};
+  )
+}

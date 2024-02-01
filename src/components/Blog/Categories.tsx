@@ -10,7 +10,9 @@ export const Categories = ({ categories, setPosts }: any) => {
   }
   return (
     <div className="border border-[#62CFF4] p-5 rounded-tl-xl rounded-br-xl">
-      <h3 className="text-2xl font-bold mb-6">Categorías</h3>
+      <button>
+        <h3 className="text-2xl font-bold mb-4">Categorías</h3>
+      </button>
       <div className="flex flex-col divide-y divide-[#62CFF4]">
         {categories &&
           categories.map((el: any, index: number) => (
