@@ -127,7 +127,7 @@ export const HomeNosEligen = () => {
                 Hemos desarrollado{" "}
                 <strong className="text-[#62cff4] font-bold">nuestros proyectos</strong> en los procesos de:
               </h3>
-              <ul className="lg:grid lg:grid-rows-[repeat(5,_20px)] lg:grid-cols-[repeat(2,_250px)] lg:grid-flow-col">
+              <ul className="lg:grid lg:grid-rows-[repeat(4,_22px)] lg:grid-cols-[repeat(2,_250px)] lg:grid-flow-col">
                 <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-4 lg:h-max">
                   <span>
                     <CircleSmall />
@@ -158,7 +158,7 @@ export const HomeNosEligen = () => {
                   </span>
                   <span>Sistemas de Impulsión Agua de Mar y Desalada</span>
                 </li>
-                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-4 lg:h-max">
+                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-4 mt-3 lg:h-max">
                   <span>
                     <CircleSmall />
                   </span>
