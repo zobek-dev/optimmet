@@ -21,7 +21,7 @@ export const HomeNosEligen = () => {
                   más de
                 </span>
                 <span className="text-[#62cff4] block font-bold text-[40px] leading-none my-1">
-                  6
+                  8
                 </span>
                 <span className="text-[#556170] font-light text-[13px] leading-none">
                   años de <br />
@@ -33,7 +33,7 @@ export const HomeNosEligen = () => {
                   más de
                 </span>
                 <span className="text-[#62cff4] block font-bold text-[40px] leading-none my-1">
-                  30
+                  40
                 </span>
                 <span className="text-[#556170] font-light text-[13px] leading-none">
                   proyectos
@@ -46,7 +46,7 @@ export const HomeNosEligen = () => {
                   más de
                 </span>
                 <span className="text-[#62cff4] block font-bold text-[40px] leading-none my-1">
-                  100
+                  1000
                 </span>
                 <span className="text-[#556170] font-light text-[13px] leading-none">
                   profesionales
@@ -81,7 +81,7 @@ export const HomeNosEligen = () => {
                     >
                       <circle cx="6" cy="6" r="6" fill="#62CFF4" />
                     </svg>
-                    Eficiencia Energetíca y gestión de la energía
+                    Eficiencia Energetíca en Diseño Proyectos de Inversión - EED
                   </li>
                   <li className="flex gap-x-2 items-start mb-2 font-light text-xs text-left">
                     <svg
@@ -93,7 +93,7 @@ export const HomeNosEligen = () => {
                     >
                       <circle cx="6" cy="6" r="6" fill="#C7E22B" />
                     </svg>
-                    Capacitaciones Técnicas
+                    Formación de Capacidades
                   </li>
                   <li className="flex gap-x-2 items-start mb-2 font-light text-xs text-left">
                     <svg
@@ -105,7 +105,7 @@ export const HomeNosEligen = () => {
                     >
                       <circle cx="6" cy="6" r="6" fill="#FC715E" />
                     </svg>
-                    Consultorías/Procesos mineros metalúrgicos
+                    Consultorías Minería Metalurgia
                   </li>
                   <li className="flex gap-x-2 items-start mb-2 font-light text-xs text-left">
                     <svg
@@ -117,62 +117,52 @@ export const HomeNosEligen = () => {
                     >
                       <circle cx="6" cy="6" r="6" fill="#FFA093" />
                     </svg>
-                    Desarrollos de proyectos de sustentabilidad
+                    Sustentabilidad y Gestión de la Energía
                   </li>
                 </ul>
               </div>
             </div>
             <div className="border border-white bg-[rgba(85,97,112,.5)] text-white p-4 rounded-[10px] mt-8 lg:flex lg:items-center lg:gap-4">
               <h3 className="font-bold text-xl mb-4 leading-[1.1]">
-                Nuestras{" "}
-                <strong className="text-[#62cff4] font-bold">áreas</strong> de
-                desarrollo:
+                Hemos desarrollado{" "}
+                <strong className="text-[#62cff4] font-bold">nuestros proyectos</strong> en los procesos de:
               </h3>
               <ul className="lg:grid lg:grid-rows-[repeat(5,_20px)] lg:grid-cols-[repeat(2,_250px)] lg:grid-flow-col">
-                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-2 lg:h-max">
+                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-4 lg:h-max">
+                  <span>
+                    <CircleSmall />
+                  </span>
+                  <span>Mina</span>
+                </li>
+                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-4 lg:h-max">
+                  <span>
+                    <CircleSmall />
+                  </span>
+                  <span>Chancado</span>
+                </li>
+                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-4 lg:h-max">
                   <span>
                     <CircleSmall />
                   </span>
                   <span>Plantas Concentradoras</span>
                 </li>
-                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-2 lg:h-max">
+                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-4 lg:h-max">
                   <span>
                     <CircleSmall />
                   </span>
-                  <span>Tranques & Relaves</span>
+                  <span>Sistemas de Transporte de Fluidos</span>
                 </li>
-                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-2 lg:h-max">
+                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-4 lg:h-max">
                   <span>
                     <CircleSmall />
                   </span>
-                  <span>Desalación e implusión de agua</span>
+                  <span>Sistemas de Impulsión Agua de Mar y Desalada</span>
                 </li>
-                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-2 lg:h-max">
+                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-4 lg:h-max">
                   <span>
                     <CircleSmall />
                   </span>
-                  <span>Transporte de Concentrado</span>
-                </li>
-                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-2 lg:h-max">
-                  <span>
-                    <CircleSmall />
-                  </span>
-                  <span>Areas Estratégicas de la Organización</span>
-                </li>
-                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-2 lg:h-max">
-                  <span>
-                    <CircleSmall />
-                  </span>
-                  <span>Pymes y Otras industrias</span>
-                </li>
-                <li className="font-light flex items-center gap-x-1 leading-none text-xs mb-2 lg:h-max">
-                  <span>
-                    <CircleSmall />
-                  </span>
-                  <span>
-                    Instituciones Nacionales de Educación, Sustentabilidad,
-                    Energía y Medioambiente
-                  </span>
+                  <span>Fundición</span>
                 </li>
               </ul>
             </div>
