@@ -5,6 +5,11 @@ import {
   Bhp,
   CodelcoAndina,
   Giz,
+  Axis,
+  Ase,
+  Krontec,
+  Solve,
+  Brass,
 } from "@/images";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
@@ -60,6 +65,41 @@ const companies: Company[] = [
     url: "https://www.codelco.com/andina",
     width: 80,
     height: 60,
+  },
+  {
+    title: "Ase",
+    image: Ase,
+    url: "https://www.agenciase.org/",
+    width: 140,
+    height: 140,
+  },
+  {
+    title: "Axis",
+    image: Axis,
+    url: "https://www.serviciosaxis.cl/inicio.php",
+    width: 100,
+    height: 100,
+  },
+  {
+    title: "Krontec",
+    image: Krontec,
+    url: "https://krontec.cl/",
+    width: 100,
+    height: 100,
+  },
+  {
+    title: "Solve",
+    image: Solve,
+    url: "",
+    width: 100,
+    height: 100,
+  },
+  {
+    title: "Brass",
+    image: Brass,
+    url: "https://brassengineering.com/es/inicio-es/",
+    width: 142,
+    height: 56,
   },
 ];
 

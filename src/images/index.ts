@@ -45,6 +45,11 @@ import AuditoriaSmall from 'public/images/auditoria-small.jpg'
 import Footer3 from 'public/images/footer-3.jpg'
 import EquipoOptimmet from 'public/images/equipo-optimmet.jpg'
 import ExperienciaIcon from 'public/images/experiencia-icon.png'
+import Axis from 'public/images/axis.jpeg'
+import Solve from 'public/images/solve.jpeg'
+import Brass from 'public/images/brass_logo.png'
+import Ase from 'public/images/ase.png'
+import Krontec from 'public/images/krontec.jpeg'
 
 export {
   LogoFooter,
@@ -94,4 +99,9 @@ export {
   AsesoriasHeading,
   Footer3,
   ExperienciaIcon,
+  Axis,
+  Solve,
+  Krontec,
+  Ase,
+  Brass,
 }
